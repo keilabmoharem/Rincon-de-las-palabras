@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="El Rincón de las Palabras - Librería online independiente con temática acogedora (cozy). Catálogo curado de narrativa, poesía, botánica y libros que abrazan el alma.">
+  <title>El Rincón de las Palabras | Librería Online Independiente &amp; Acogedora</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado Principal & Navegación -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" id="brand-home-link">
+        <img src="img/logo-bookstore.svg" alt="Logotipo El Rincón de las Palabras" class="brand-logo" width="44" height="44">
+        <div class="brand-info">
+          <span class="brand-title">El Rincón de las Palabras</span>
+          <span class="brand-tagline">Librería &amp; Café Literario</span>
+        </div>
+      </a>
+
+      <nav class="main-navigation" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html" class="active" id="nav-inicio">Inicio</a></li>
+          <li class="nav-item"><a href="#catalogo" id="nav-catalogo">Catálogo</a></li>
+          <li class="nav-item"><a href="#sobre-nosotros" id="nav-sobre-nosotros">Sobre la Librería</a></li>
+          <li class="nav-item"><a href="pages/contacto.html" id="nav-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <span class="badge-cafe">
+          ☕ Café Abierto hasta 20:00
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Hero de Bienvenida -->
+  <section class="hero-banner" aria-labelledby="hero-title">
+    <div class="hero-container">
+      <div class="hero-text-block">
+        <span class="hero-badge">🌿 Selección Artesanal &amp; Calma</span>
+        <h1 class="hero-heading" id="hero-title">Libros que susurran <em>historias al alma</em> y abrigan las tardes de lectura.</h1>
+        <p class="hero-description">
+          Somos una pequeña librería de barrio con espíritu independiente. Curamos con dedicación obras que invitan a la pausa, al café humeante y al redescubrimiento de la belleza en las pequeñas cosas.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#catalogo" class="btn-primary" id="btn-explorar-catalogo">Explorar Catálogo</a>
+          <a href="pages/contacto.html" class="btn-secondary" id="btn-pedidos-especiales">Hacer un Pedido Especial</a>
+        </div>
+      </div>
+
+      <div class="hero-spotlight">
+        <div class="spotlight-header">
+          <span>Recomendación Semanal</span>
+          <span>★ 4.9</span>
+        </div>
+        <blockquote class="spotlight-quote">
+          «Abrir un buen libro en un día lluvioso es como encender una lámpara en un rincón secreto del mundo.»
+        </blockquote>
+        <span class="spotlight-author">— Mateo, librero de guardia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenedor Principal: Filtros y Catálogo -->
+  <main class="main-layout" id="catalogo">
+    
+    <!-- Barra Lateral de Categorías y Filtros Semánticos -->
+    <aside class="filters-sidebar" aria-label="Filtros del catálogo">
+      <div class="sidebar-title">
+        <span>Géneros &amp; Temas</span>
+        <span>🍂</span>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label">Secciones de la Librería</span>
+        <ul class="filter-list">
+          <li class="filter-item active">
+            <span>Todos los Libros</span>
+            <span class="filter-count">6</span>
+          </li>
+          <li class="filter-item">
+            <span>Narrativa &amp; Calma</span>
+            <span class="filter-count">2</span>
+          </li>
+          <li class="filter-item">
+            <span>Poesía Sensible</span>
+            <span class="filter-count">1</span>
+          </li>
+          <li class="filter-item">
+            <span>Naturaleza &amp; Arte</span>
+            <span class="filter-count">1</span>
+          </li>
+          <li class="filter-item">
+            <span>Filosofía Cotidiana</span>
+            <span class="filter-count">1</span>
+          </li>
+          <li class="filter-item">
+            <span>Relatos de Atelier</span>
+            <span class="filter-count">1</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-cozy-note">
+        <strong>📦 Envíos cuidados con amor</strong>
+        <span>Cada pedido incluye un marcapáginas botánico artesanal y una bolsita de té de hierbas de cortesía.</span>
+      </div>
+    </aside>
+
+    <!-- Sección del Catálogo de Libros -->
+    <section class="catalog-section" aria-labelledby="catalog-heading">
+      <div class="catalog-header">
+        <h2 class="catalog-title" id="catalog-heading">
+          Nuestras Novedades Curadas
+        </h2>
+        <span class="catalog-stats">Mostrando 6 títulos escogidos a mano</span>
+      </div>
+
+      <!-- Tarjetas de Libros Flexbox -->
+      <div class="books-container">
+
+        <!-- Libro 1: El Murmullo de las Hojas -->
+        <article class="book-card" id="book-murmullo-hojas">
+          <div class="book-cover-wrapper">
+            <img src="img/libro-murmullo-hojas.jpg" alt="Portada del libro El Murmullo de las Hojas con hojas otoñales en acuarela" class="book-cover-img" width="400" height="600" loading="lazy">
+            <span class="book-badge badge-featured">Recomendado</span>
+          </div>
+          <div class="book-card-body">
+            <span class="book-genre">Narrativa de Otoño</span>
+            <h3 class="book-title">El Murmullo de las Hojas</h3>
+            <p class="book-author">Por Clara Isabel Ruiz</p>
+            <div class="book-rating" aria-label="Calificación 5 de 5 estrellas">
+              <span>★★★★★</span>
+              <span class="book-reviews">(38 opiniones)</span>
+            </div>
+            <p class="book-synopsis">
+              Una novela intimista sobre un regreso al campo, la recolección de historias olvidadas y los silencios que sanan bajo las arboledas doradas de octubre.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <div class="book-price-block">
+              <span class="book-price">$21.50</span>
+              <span class="book-price-format">Tapa blanda artesanal</span>
+            </div>
+            <button type="button" class="btn-primary btn-sm" id="btn-add-murmullo">Añadir a la Cesta</button>
+          </div>
+        </article>
+
+        <!-- Libro 2: Café en Ciudades Lejanas -->
+        <article class="book-card" id="book-cafe-ciudades">
+          <div class="book-cover-wrapper">
+            <img src="img/libro-cafe-ciudades.jpg" alt="Portada del libro Café en Ciudades Lejanas con taza humeante y calle empedrada" class="book-cover-img" width="400" height="600" loading="lazy">
+            <span class="book-badge badge-indie">Novedad</span>
+          </div>
+          <div class="book-card-body">
+            <span class="book-genre">Crónicas &amp; Viajes</span>
+            <h3 class="book-title">Café en Ciudades Lejanas</h3>
+            <p class="book-author">Por Mateo Benítez</p>
+            <div class="book-rating" aria-label="Calificación 5 de 5 estrellas">
+              <span>★★★★★</span>
+              <span class="book-reviews">(44 opiniones)</span>
+            </div>
+            <p class="book-synopsis">
+              Crónicas de viajes a paso lento, cuadernos de notas manchados de espresso y conversaciones inolvidables en bistrós de adoquines desgastados.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <div class="book-price-block">
+              <span class="book-price">$24.00</span>
+              <span class="book-price-format">Edición cosida a hilo</span>
+            </div>
+            <button type="button" class="btn-primary btn-sm" id="btn-add-cafe">Añadir a la Cesta</button>
+          </div>
+        </article>
+
+        <!-- Libro 3: Botánica para Soñadores -->
+        <article class="book-card" id="book-botanica-sonadores">
+          <div class="book-cover-wrapper">
+            <img src="img/libro-botanica-sonadores.svg" alt="Portada botánica ilustrada con ramas, flores prensadas y marco delicado" class="book-cover-img" width="400" height="600" loading="lazy">
+            <span class="book-badge badge-classic">Ilustrado</span>
+          </div>
+          <div class="book-card-body">
+            <span class="book-genre">Naturaleza &amp; Arte</span>
+            <h3 class="book-title">Botánica para Soñadores</h3>
+            <p class="book-author">Por Elena Valenzuela</p>
+            <div class="book-rating" aria-label="Calificación 5 de 5 estrellas">
+              <span>★★★★★</span>
+              <span class="book-reviews">(29 opiniones)</span>
+            </div>
+            <p class="book-synopsis">
+              Un herbario lírico repleto de ilustraciones a pluma y relatos sobre el poder restaurador de plantar semillas y pasear por bosques antiguos.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <div class="book-price-block">
+              <span class="book-price">$27.90</span>
+              <span class="book-price-format">Tapa dura con láminas</span>
+            </div>
+            <button type="button" class="btn-primary btn-sm" id="btn-add-botanica">Añadir a la Cesta</button>
+          </div>
+        </article>
+
+        <!-- Libro 4: Versos al Atardecer -->
+        <article class="book-card" id="book-versos-atardecer">
+          <div class="book-cover-wrapper">
+            <img src="img/libro-versos-atardecer.svg" alt="Portada poética con puesta de sol en tonos terracota y colinas minimalistas" class="book-cover-img" width="400" height="600" loading="lazy">
+            <span class="book-badge badge-award">Premio Indie</span>
+          </div>
+          <div class="book-card-body">
+            <span class="book-genre">Poesía Contemporánea</span>
+            <h3 class="book-title">Versos al Atardecer</h3>
+            <p class="book-author">Por Santiago Morales</p>
+            <div class="book-rating" aria-label="Calificación 5 de 5 estrellas">
+              <span>★★★★★</span>
+              <span class="book-reviews">(51 opiniones)</span>
+            </div>
+            <p class="book-synopsis">
+              Poemas breves y luminosos que celebran el instante crepuscular en el que el cielo se tiñe de canela y la mente encuentra quietud.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <div class="book-price-block">
+              <span class="book-price">$18.50</span>
+              <span class="book-price-format">Papel lino verjurado</span>
+            </div>
+            <button type="button" class="btn-primary btn-sm" id="btn-add-versos">Añadir a la Cesta</button>
+          </div>
+        </article>
+
+        <!-- Libro 5: La Quietud de las Pequeñas Cosas -->
+        <article class="book-card" id="book-quietud-cosas">
+          <div class="book-cover-wrapper">
+            <img src="img/libro-quietud-cosas.svg" alt="Portada acogedora con sillón de lectura, manta cálida y pila de libros" class="book-cover-img" width="400" height="600" loading="lazy">
+            <span class="book-badge badge-featured">Imprescindible</span>
+          </div>
+          <div class="book-card-body">
+            <span class="book-genre">Filosofía Cotidiana</span>
+            <h3 class="book-title">La Quietud de las Pequeñas Cosas</h3>
+            <p class="book-author">Por Lucía Navarro</p>
+            <div class="book-rating" aria-label="Calificación 5 de 5 estrellas">
+              <span>★★★★★</span>
+              <span class="book-reviews">(62 opiniones)</span>
+            </div>
+            <p class="book-synopsis">
+              Un ensayo conmovedor sobre desacelerar, el ritual de encender una vela al anochecer y cómo rediseñar nuestro espacio para vivir con mayor presencia.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <div class="book-price-block">
+              <span class="book-price">$22.00</span>
+              <span class="book-price-format">Tapa blanda con solapas</span>
+            </div>
+            <button type="button" class="btn-primary btn-sm" id="btn-add-quietud">Añadir a la Cesta</button>
+          </div>
+        </article>
+
+        <!-- Libro 6: Historias de una Taza de Té -->
+        <article class="book-card" id="book-historias-te">
+          <div class="book-cover-wrapper">
+            <img src="img/libro-historias-te.svg" alt="Portada con taza de té artesanal de cerámica verde y flores de cerezo" class="book-cover-img" width="400" height="600" loading="lazy">
+            <span class="book-badge badge-indie">Favorito</span>
+          </div>
+          <div class="book-card-body">
+            <span class="book-genre">Relatos del Atelier</span>
+            <h3 class="book-title">Historias de una Taza de Té</h3>
+            <p class="book-author">Por Haruki Tanaka</p>
+            <div class="book-rating" aria-label="Calificación 5 de 5 estrellas">
+              <span>★★★★★</span>
+              <span class="book-reviews">(33 opiniones)</span>
+            </div>
+            <p class="book-synopsis">
+              Ocho relatos entrelazados que transcurren alrededor de una mesa de madera de cerezo, donde cada aroma de infusión despierta una memoria oculta.
+            </p>
+          </div>
+          <div class="book-card-footer">
+            <div class="book-price-block">
+              <span class="book-price">$19.80</span>
+              <span class="book-price-format">Traducción cuidada</span>
+            </div>
+            <button type="button" class="btn-primary btn-sm" id="btn-add-te">Añadir a la Cesta</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Sección Sobre Nosotros / Alma de la Librería -->
+  <section class="hero-banner" id="sobre-nosotros" aria-labelledby="about-heading">
+    <div class="hero-container">
+      <div class="hero-text-block">
+        <span class="hero-badge">📖 Nuestra Historia</span>
+        <h2 class="hero-heading" id="about-heading">Un refugio donde <em>las palabras cobran vida</em>.</h2>
+        <p class="hero-description">
+          Nacimos con la ilusión de crear un rincón donde hojear páginas sin prisa, oler a café recién molido y encontrar títulos editados con mimo por sellos independientes de todo el mundo.
+        </p>
+        <div class="hero-cta-group">
+          <a href="pages/contacto.html" class="btn-primary" id="btn-about-contact">¿Tienes preguntas? Escríbenos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de Página Semántico (Flexbox) -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-columns">
+        
+        <!-- Columna 1: Identidad -->
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="img/logo-bookstore.svg" alt="Logo de la librería" width="32" height="32">
+            <span class="footer-brand-title">El Rincón de las Palabras</span>
+          </div>
+          <p class="footer-description">
+            Librería independiente &amp; cafetería literaria. Espacios pensados para el sosiego, la lectura pausada y el descubrimiento de bellas historias.
+          </p>
+        </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo Completo</a></li>
+            <li><a href="#sobre-nosotros">Sobre la Librería</a></li>
+            <li><a href="pages/contacto.html">Contacto &amp; Pedidos Especiales</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Horarios de Visita -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Horarios de Librería &amp; Café</h4>
+          <div class="footer-hours-item">
+            <span>Lunes a Viernes:</span>
+            <span>09:30 - 20:30</span>
+          </div>
+          <div class="footer-hours-item">
+            <span>Sábados de Lectura:</span>
+            <span>10:00 - 21:00</span>
+          </div>
+          <div class="footer-hours-item">
+            <span>Domingos &amp; Té:</span>
+            <span>11:00 - 18:00</span>
+          </div>
+        </div>
+
+        <!-- Columna 4: Encuéntranos -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Ubicación</h4>
+          <p class="footer-description">
+            Callejón de los Jazmines 14, Barrio Antiguo.<br>
+            Cerca de la Plaza de las Acacias.<br>
+            Tel: +34 912 345 678<br>
+            hola@elrincondelaspalabras.com
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 El Rincón de las Palabras. Todos los derechos reservados.</p>
+        <p>Hecho con estética acogedora, Flexbox y amor por los libros.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,1048 @@
+/* ==========================================================================
+   Book Store - "El Rincón de las Palabras"
+   Theme: Cozy & Indie Style
+   External Main Stylesheet (Strict Flexbox Architecture)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Google Fonts Import & CSS Variables (Design Tokens)
+   -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  /* Cozy Color Palette */
+  --bg-parchment: #FDFBF7;
+  --bg-cream: #F5EFEB;
+  --bg-surface: #FFFFFF;
+  --bg-card-hover: #FCFAF6;
+  
+  /* Text & Inks */
+  --text-main: #2C221E;
+  --text-muted: #6E5F57;
+  --text-light: #9B8D85;
+
+  /* Accent Colors */
+  --accent-terracotta: #C35A38;
+  --accent-terracotta-hover: #A84729;
+  --accent-terracotta-light: #F8EBE6;
+
+  --accent-olive: #5B7055;
+  --accent-olive-hover: #475842;
+  --accent-olive-light: #EFF4EE;
+
+  --accent-amber: #D99B43;
+  --accent-amber-light: #FBF4E8;
+
+  --border-warm: #EADFCF;
+  --border-warm-subtle: #F1E9DE;
+
+  /* Typography */
+  --font-serif: 'Lora', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Shadows & Elevations */
+  --shadow-subtle: 0 4px 14px rgba(44, 34, 30, 0.05);
+  --shadow-medium: 0 8px 24px rgba(44, 34, 30, 0.08);
+  --shadow-hover: 0 14px 32px rgba(44, 34, 30, 0.12);
+
+  /* Transitions */
+  --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 9999px;
+}
+
+/* --------------------------------------------------------------------------
+   2. Modern Reset & Base Rules
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-main);
+  background-color: var(--bg-parchment);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* --------------------------------------------------------------------------
+   3. Header & Navigation (Flexbox)
+   -------------------------------------------------------------------------- */
+.site-header {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-warm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-subtle);
+}
+
+.header-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.brand-tagline {
+  font-size: 0.75rem;
+  color: var(--accent-terracotta);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-item a {
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-sm);
+  position: relative;
+}
+
+.nav-item a:hover {
+  color: var(--accent-terracotta);
+}
+
+.nav-item a.active {
+  color: var(--accent-terracotta);
+  font-weight: 700;
+}
+
+.nav-item a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0.6rem;
+  right: 0.6rem;
+  height: 2px;
+  background-color: var(--accent-terracotta);
+  border-radius: 2px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.badge-cafe {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  background-color: var(--accent-amber-light);
+  color: #8C5919;
+  border: 1px solid #EED7B3;
+  border-radius: var(--radius-full);
+}
+
+/* --------------------------------------------------------------------------
+   4. Hero / Welcome Banner (Flexbox)
+   -------------------------------------------------------------------------- */
+.hero-banner {
+  background: linear-gradient(135deg, var(--bg-cream) 0%, #F1E5D8 100%);
+  border-bottom: 1px solid var(--border-warm);
+  padding: 3rem 1.5rem;
+}
+
+.hero-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-text-block {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-olive);
+  background-color: var(--accent-olive-light);
+  border: 1px solid #D2E0CE;
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-full);
+  align-self: flex-start;
+}
+
+.hero-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-main);
+}
+
+.hero-heading em {
+  font-style: italic;
+  color: var(--accent-terracotta);
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 580px;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-spotlight {
+  flex: 0 1 360px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-medium);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.spotlight-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-terracotta);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.spotlight-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  line-height: 1.45;
+  border-left: 3px solid var(--accent-amber);
+  padding-left: 0.75rem;
+}
+
+.spotlight-author {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  align-self: flex-end;
+}
+
+/* --------------------------------------------------------------------------
+   5. Main Layout & Catalog (Flexbox)
+   -------------------------------------------------------------------------- */
+.main-layout {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex: 1 0 auto;
+}
+
+/* Sidebar Filters */
+.filters-sidebar {
+  flex: 0 0 260px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--text-main);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-warm-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.filter-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.filter-item:hover {
+  background-color: var(--accent-terracotta-light);
+  color: var(--accent-terracotta);
+}
+
+.filter-item.active {
+  background-color: var(--accent-terracotta-light);
+  color: var(--accent-terracotta);
+  font-weight: 600;
+}
+
+.filter-count {
+  font-size: 0.75rem;
+  background-color: var(--bg-cream);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+}
+
+.sidebar-cozy-note {
+  background-color: var(--accent-olive-light);
+  border: 1px dashed #BFD3BC;
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  font-size: 0.82rem;
+  color: #384A35;
+  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.sidebar-cozy-note strong {
+  color: var(--accent-olive);
+}
+
+/* Catalog Section */
+.catalog-section {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-warm);
+}
+
+.catalog-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.catalog-stats {
+  font-size: 0.88rem;
+  color: var(--text-light);
+}
+
+/* Products Flexbox Grid */
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  justify-content: flex-start;
+}
+
+/* Book Card Component */
+.book-card {
+  flex: 1 1 280px;
+  max-width: 380px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: #DCCBB6;
+}
+
+.book-cover-wrapper {
+  position: relative;
+  background-color: var(--bg-cream);
+  height: 380px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.book-card:hover .book-cover-img {
+  transform: scale(1.03);
+}
+
+.book-badge {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.badge-featured {
+  background-color: var(--accent-terracotta);
+  color: #FFFFFF;
+}
+
+.badge-indie {
+  background-color: var(--accent-olive);
+  color: #FFFFFF;
+}
+
+.badge-award {
+  background-color: var(--accent-amber);
+  color: #FFFFFF;
+}
+
+.badge-classic {
+  background-color: #55443D;
+  color: #FFFFFF;
+}
+
+.book-card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1 0 auto;
+}
+
+.book-genre {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-olive);
+}
+
+.book-title {
+  font-family: var(--font-serif);
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.book-author {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.book-synopsis {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.book-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--accent-amber);
+}
+
+.book-reviews {
+  color: var(--text-light);
+  font-size: 0.78rem;
+  margin-left: 0.25rem;
+}
+
+.book-card-footer {
+  padding: 1rem 1.25rem;
+  background-color: #FAF6F0;
+  border-top: 1px solid var(--border-warm-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.book-price-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-price {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent-terracotta);
+}
+
+.book-price-format {
+  font-size: 0.72rem;
+  color: var(--text-light);
+}
+
+/* --------------------------------------------------------------------------
+   6. Buttons & Interactive Controls
+   -------------------------------------------------------------------------- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--accent-terracotta);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: 0 2px 8px rgba(195, 90, 56, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-terracotta-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(195, 90, 56, 0.35);
+}
+
+.btn-primary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(195, 90, 56, 0.4);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-warm);
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-cream);
+  border-color: #DCCBB6;
+  color: var(--accent-terracotta);
+}
+
+.btn-sm {
+  padding: 0.45rem 0.85rem;
+  font-size: 0.82rem;
+}
+
+/* --------------------------------------------------------------------------
+   7. Contact Page Layout & Formspree Form (Flexbox)
+   -------------------------------------------------------------------------- */
+.contact-hero {
+  background: linear-gradient(135deg, var(--bg-cream) 0%, #EFE5D8 100%);
+  border-bottom: 1px solid var(--border-warm);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.contact-hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-hero-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  color: var(--text-main);
+}
+
+.contact-hero-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 600px;
+}
+
+.contact-main {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+}
+
+.contact-card-info {
+  flex: 1 1 320px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.contact-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-warm-subtle);
+  padding-bottom: 0.75rem;
+}
+
+.contact-detail-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--accent-terracotta);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.contact-item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.contact-item-value {
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.contact-form-wrapper {
+  flex: 1 1 450px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-md);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-medium);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-row .form-group {
+  flex: 1 1 200px;
+}
+
+.form-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.form-label .required-dot {
+  color: var(--accent-terracotta);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-parchment);
+  color: var(--text-main);
+  font-size: 0.95rem;
+  transition: var(--transition-smooth);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent-terracotta);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(195, 90, 56, 0.18);
+}
+
+.form-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.form-helper {
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+.form-submit-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.form-privacy-note {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  max-width: 320px;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   8. Footer (Flexbox)
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background-color: #241A16;
+  color: #DCCBBF;
+  border-top: 3px solid var(--accent-terracotta);
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-brand-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.footer-description {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #BDB0A4;
+}
+
+.footer-col-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+.footer-col-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background-color: var(--accent-terracotta);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-links a {
+  font-size: 0.88rem;
+  color: #BDB0A4;
+}
+
+.footer-links a:hover {
+  color: var(--accent-terracotta-light);
+  padding-left: 4px;
+}
+
+.footer-hours-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #BDB0A4;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px dashed rgba(220, 203, 191, 0.15);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(220, 203, 191, 0.15);
+  font-size: 0.8rem;
+  color: #8E7F75;
+}
+
+/* --------------------------------------------------------------------------
+   9. Responsive Design & Media Queries
+   -------------------------------------------------------------------------- */
+@media (max-width: 960px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .filters-sidebar {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .filter-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact-main {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 680px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-navigation {
+    width: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-spotlight {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .book-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

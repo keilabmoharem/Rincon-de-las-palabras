@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ponte en contacto con El Rincón de las Palabras. Envíanos consultas sobre libros descatalogados, reservas para nuestro club de lectura o pedidos especiales.">
+  <title>Contacto &amp; Pedidos Especiales | El Rincón de las Palabras</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado Principal & Navegación -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="brand-link" id="brand-home-link">
+        <img src="../img/logo-bookstore.svg" alt="Logotipo El Rincón de las Palabras" class="brand-logo" width="44" height="44">
+        <div class="brand-info">
+          <span class="brand-title">El Rincón de las Palabras</span>
+          <span class="brand-tagline">Librería &amp; Café Literario</span>
+        </div>
+      </a>
+
+      <nav class="main-navigation" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="../index.html" id="nav-inicio">Inicio</a></li>
+          <li class="nav-item"><a href="../index.html#catalogo" id="nav-catalogo">Catálogo</a></li>
+          <li class="nav-item"><a href="../index.html#sobre-nosotros" id="nav-sobre-nosotros">Sobre la Librería</a></li>
+          <li class="nav-item"><a href="contacto.html" class="active" id="nav-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <span class="badge-cafe">
+          ☕ Café Abierto hasta 20:00
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Hero de Contacto -->
+  <section class="contact-hero" aria-labelledby="contact-heading">
+    <div class="contact-hero-container">
+      <span class="hero-badge">💌 Escríbenos una Carta</span>
+      <h1 class="contact-hero-heading" id="contact-heading">Estamos encantados de conversar contigo</h1>
+      <p class="contact-hero-subtitle">
+        ¿Buscas un libro en particular, quieres recomendar un autor independiente o reservar una mesa en nuestro café para una tarde de lectura tranquila? Déjanos tus palabras.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contenedor Principal de Contacto: Información & Formulario Formspree -->
+  <main class="contact-main">
+
+    <!-- Tarjeta de Información y Detalles de la Librería -->
+    <aside class="contact-card-info" aria-label="Información de contacto de la librería">
+      <h2 class="contact-card-title">Visítanos o Escríbenos</h2>
+
+      <div class="contact-detail-group">
+        
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📍</div>
+          <div class="contact-item-text">
+            <span class="contact-item-title">Dirección</span>
+            <span class="contact-item-value">Callejón de los Jazmines 14, Barrio Antiguo</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">🕒</div>
+          <div class="contact-item-text">
+            <span class="contact-item-title">Horarios de Atención</span>
+            <span class="contact-item-value">Lun - Vie: 09:30 a 20:30<br>Sábados: 10:00 a 21:00</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">✉️</div>
+          <div class="contact-item-text">
+            <span class="contact-item-title">Correo Electrónico</span>
+            <span class="contact-item-value">hola@elrincondelaspalabras.com</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📞</div>
+          <div class="contact-item-text">
+            <span class="contact-item-title">Teléfono &amp; WhatsApp</span>
+            <span class="contact-item-value">+34 912 345 678</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sidebar-cozy-note">
+        <strong>🍵 El Club de Lectura de los Jueves</strong>
+        <span>Nos reunimos cada jueves a las 18:30 para comentar una obra acompañada de infusiones de la casa. ¡La entrada es libre y acogedora!</span>
+      </div>
+    </aside>
+
+    <!-- Contenedor del Formulario Formspree -->
+    <section class="contact-form-wrapper" aria-labelledby="form-heading">
+      <h2 class="contact-card-title" id="form-heading">Envíanos un Mensaje</h2>
+      
+      <!-- Formulario Integrado con Formspree -->
+      <form action="https://formspree.io/f/mbljryqv" method="POST" class="contact-form" id="bookstore-contact-form">
+        
+        <!-- Fila de Nombre y Correo -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="campo-nombre" class="form-label">
+              Nombre Completo <span class="required-dot" aria-hidden="true">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="campo-nombre" 
+              name="name" 
+              class="form-input" 
+              placeholder="Ej. Clara Ruiz" 
+              required 
+              autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="campo-email" class="form-label">
+              Correo Electrónico <span class="required-dot" aria-hidden="true">*</span>
+            </label>
+            <input 
+              type="email" 
+              id="campo-email" 
+              name="email" 
+              class="form-input" 
+              placeholder="tu.correo@ejemplo.com" 
+              required 
+              autocomplete="email">
+          </div>
+        </div>
+
+        <!-- Fila de Asunto / Motivo de Consulta -->
+        <div class="form-group">
+          <label for="campo-motivo" class="form-label">
+            Motivo de tu Consulta
+          </label>
+          <select id="campo-motivo" name="subject" class="form-select">
+            <option value="pedido-especial">Búsqueda de libro o pedido especial</option>
+            <option value="reserva-cafe">Reserva de mesa o espacio en el café</option>
+            <option value="club-lectura">Información sobre el Club de Lectura</option>
+            <option value="editorial-indie">Propuesta de autor o editorial independiente</option>
+            <option value="otro">Otro mensaje cálido</option>
+          </select>
+        </div>
+
+        <!-- Campo de Mensaje -->
+        <div class="form-group">
+          <label for="campo-mensaje" class="form-label">
+            Tu Mensaje <span class="required-dot" aria-hidden="true">*</span>
+          </label>
+          <textarea 
+            id="campo-mensaje" 
+            name="message" 
+            class="form-textarea" 
+            placeholder="Escríbenos con confianza... Cuéntanos qué título buscas, qué historia tienes en mente o cualquier pregunta." 
+            required></textarea>
+          <span class="form-helper">Respondemos habitualmente en menos de 24 horas laborables.</span>
+        </div>
+
+        <!-- Botón de Envío y Aviso -->
+        <div class="form-submit-block">
+          <button type="submit" class="btn-primary" id="btn-enviar-formulario">
+            Enviar Mensaje con Cariño ✨
+          </button>
+          <p class="form-privacy-note">
+            Tus datos solo se usarán para responder a tu consulta. Cuidamos tu privacidad como un tesoro.
+          </p>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Pie de Página Semántico (Flexbox) -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-columns">
+        
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="../img/logo-bookstore.svg" alt="Logo de la librería" width="32" height="32">
+            <span class="footer-brand-title">El Rincón de las Palabras</span>
+          </div>
+          <p class="footer-description">
+            Librería independiente &amp; cafetería literaria. Espacios pensados para el sosiego, la lectura pausada y el descubrimiento de bellas historias.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#catalogo">Catálogo Completo</a></li>
+            <li><a href="../index.html#sobre-nosotros">Sobre la Librería</a></li>
+            <li><a href="contacto.html">Contacto &amp; Pedidos Especiales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Horarios de Librería &amp; Café</h4>
+          <div class="footer-hours-item">
+            <span>Lunes a Viernes:</span>
+            <span>09:30 - 20:30</span>
+          </div>
+          <div class="footer-hours-item">
+            <span>Sábados de Lectura:</span>
+            <span>10:00 - 21:00</span>
+          </div>
+          <div class="footer-hours-item">
+            <span>Domingos &amp; Té:</span>
+            <span>11:00 - 18:00</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Ubicación</h4>
+          <p class="footer-description">
+            Callejón de los Jazmines 14, Barrio Antiguo.<br>
+            Cerca de la Plaza de las Acacias.<br>
+            Tel: +34 912 345 678<br>
+            hola@elrincondelaspalabras.com
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 El Rincón de las Palabras. Todos los derechos reservados.</p>
+        <p>Hecho con estética acogedora, Flexbox y amor por los libros.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

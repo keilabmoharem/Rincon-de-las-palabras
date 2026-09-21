@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <!-- Sunset Gradient -->
+    <linearGradient id="sunsetSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EED5B7"/>
+      <stop offset="35%" stop-color="#EAA97B"/>
+      <stop offset="65%" stop-color="#C75D3C"/>
+      <stop offset="100%" stop-color="#4B2C24"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE8B2"/>
+      <stop offset="100%" stop-color="#F3AA4E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#sunsetSky)"/>
+
+  <!-- Spine Shadow -->
+  <rect x="0" y="0" width="18" height="600" fill="#1C0E0B" opacity="0.25"/>
+  <line x1="18" y1="0" x2="18" y2="600" stroke="#FFD8B5" stroke-width="0.75" opacity="0.3"/>
+
+  <!-- Sun Disc -->
+  <circle cx="200" cy="310" r="75" fill="url(#sunGrad)" opacity="0.95"/>
+  <circle cx="200" cy="310" r="95" fill="#FFE8B2" opacity="0.15"/>
+
+  <!-- Birds in Distance -->
+  <path d="M110,240 Q118,234 126,240 Q134,234 142,240" fill="none" stroke="#683424" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M260,215 Q266,210 272,215 Q278,210 284,215" fill="none" stroke="#683424" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M285,235 Q290,230 295,235 Q300,230 305,235" fill="none" stroke="#683424" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Layered Minimalist Hills / Mountains -->
+  <path d="M0,350 Q90,320 180,345 T360,335 L400,340 L400,600 L0,600 Z" fill="#753526" opacity="0.85"/>
+  <path d="M0,385 Q110,360 220,380 T400,370 L400,600 L0,600 Z" fill="#52241A" opacity="0.95"/>
+  <path d="M0,430 Q130,405 260,430 T400,415 L400,600 L0,600 Z" fill="#2E140E"/>
+
+  <!-- Delicate Tree Silhouette -->
+  <g transform="translate(100, 395) scale(0.65)" stroke="#1F0D09" stroke-linecap="round">
+    <path d="M0,80 Q2,35 -5,0" fill="none" stroke-width="5"/>
+    <path d="M-2,35 Q-20,15 -35,5" fill="none" stroke-width="2.5"/>
+    <path d="M-1,20 Q15,5 30,-5" fill="none" stroke-width="2.5"/>
+    <path d="M-5,0 Q-15,-20 -25,-30" fill="none" stroke-width="2"/>
+    <path d="M-5,0 Q8,-15 18,-28" fill="none" stroke-width="2"/>
+  </g>
+
+  <!-- Title & Poetry Frame -->
+  <rect x="35" y="35" width="330" height="155" rx="8" fill="#FDFBF7" opacity="0.94"/>
+  <rect x="42" y="42" width="316" height="141" rx="5" fill="none" stroke="#C75D3C" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <text x="200" y="70" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="3" fill="#8C3E26">COLECCIÓN POÉTICA</text>
+  
+  <text x="200" y="112" text-anchor="middle" font-family="'Lora', serif" font-size="26" font-weight="700" fill="#29130D">VERSOS AL</text>
+  <text x="200" y="142" text-anchor="middle" font-family="'Lora', serif" font-size="26" font-weight="700" fill="#29130D">ATARDECER</text>
+  
+  <text x="200" y="166" text-anchor="middle" font-family="'Lora', serif" font-style="italic" font-size="12" fill="#8C3E26">El latido dorado de lo efímero</text>
+
+  <!-- Author Tag at Bottom -->
+  <text x="200" y="535" text-anchor="middle" font-family="'Lora', serif" font-size="15" font-weight="600" letter-spacing="2" fill="#FDFBF7">SANTIAGO MORALES</text>
+  <text x="200" y="555" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2" fill="#EAA97B">PREMIO INDIE DE POESÍA</text>
+</svg>

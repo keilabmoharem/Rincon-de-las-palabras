@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="warmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFE6DD"/>
+      <stop offset="50%" stop-color="#E2D4C3"/>
+      <stop offset="100%" stop-color="#D5C2AD"/>
+    </linearGradient>
+    <linearGradient id="chairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8C5C42"/>
+      <stop offset="100%" stop-color="#5E3825"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#warmBg)"/>
+
+  <!-- Spine Shadow -->
+  <rect x="0" y="0" width="18" height="600" fill="#2B1F17" opacity="0.15"/>
+  <line x1="18" y1="0" x2="18" y2="600" stroke="#7A6855" stroke-width="0.75" opacity="0.3"/>
+
+  <!-- Arch Frame -->
+  <path d="M45,180 A155,155 0 0,1 355,180 L355,540 A10,10 0 0,1 345,550 L55,550 A10,10 0 0,1 45,540 Z" fill="#F8F3EC" stroke="#C4B19C" stroke-width="1.2"/>
+
+  <!-- Windowpane Grid in Background of Arch -->
+  <path d="M120,70 L120,240 M200,45 L200,240 M280,70 L280,240 M55,160 L345,160" stroke="#E5D9CC" stroke-width="2"/>
+
+  <!-- Glowing Lamp / Candle -->
+  <circle cx="115" cy="275" r="28" fill="#FCEAC7" opacity="0.5"/>
+  <path d="M112,285 L118,285 L115,268 Z" fill="#D97A38"/>
+  <ellipse cx="115" cy="265" rx="3.5" ry="6" fill="#F7B23B"/>
+  <rect x="105" y="285" width="20" height="24" rx="3" fill="#D1C3B4" stroke="#9A8775" stroke-width="1.2"/>
+
+  <!-- Cozy Armchair Vector -->
+  <g id="armchair" transform="translate(195, 330) scale(0.95)">
+    <!-- Backrest -->
+    <path d="M-65,30 C-70,-60 70,-60 65,30 Z" fill="url(#chairGrad)"/>
+    <!-- Cushion Tufting Details -->
+    <circle cx="-25" cy="-15" r="3" fill="#4B2C1C"/>
+    <circle cx="0" cy="-25" r="3" fill="#4B2C1C"/>
+    <circle cx="25" cy="-15" r="3" fill="#4B2C1C"/>
+    <circle cx="-15" cy="10" r="3" fill="#4B2C1C"/>
+    <circle cx="15" cy="10" r="3" fill="#4B2C1C"/>
+    <!-- Armrests -->
+    <path d="M-80,-10 C-65,-10 -60,40 -70,50 C-80,50 -90,20 -80,-10 Z" fill="#784B34"/>
+    <path d="M80,-10 C65,-10 60,40 70,50 C80,50 90,20 80,-10 Z" fill="#784B34"/>
+    <!-- Seat Cushion -->
+    <rect x="-65" y="25" width="130" height="32" rx="12" fill="#9C6B50"/>
+    <!-- Cozy Mustard Throw Blanket -->
+    <path d="M-20,20 C-10,15 15,25 25,45 C28,55 20,80 15,85 C5,85 -5,50 -20,20 Z" fill="#D99B43"/>
+    <line x1="16" y1="85" x2="16" y2="92" stroke="#B87C2B" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <line x1="20" y1="85" x2="20" y2="92" stroke="#B87C2B" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <!-- Wooden Legs -->
+    <line x1="-55" y1="57" x2="-65" y2="85" stroke="#3D2316" stroke-width="5" stroke-linecap="round"/>
+    <line x1="55" y1="57" x2="65" y2="85" stroke="#3D2316" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Stack of Books beside Chair -->
+  <g transform="translate(100, 410) scale(0.9)">
+    <rect x="-35" y="0" width="65" height="15" rx="2" fill="#586E53"/>
+    <rect x="-30" y="-14" width="55" height="14" rx="2" fill="#C35A38"/>
+    <rect x="-28" y="-27" width="52" height="13" rx="2" fill="#D99B43"/>
+  </g>
+
+  <!-- Title & Philosophy Headings -->
+  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="3" fill="#6B5445">FILOSOFÍA DEL HOGAR</text>
+
+  <text x="200" y="118" text-anchor="middle" font-family="'Lora', serif" font-size="24" font-weight="700" fill="#2B1F17">LA QUIETUD DE LAS</text>
+  <text x="200" y="146" text-anchor="middle" font-family="'Lora', serif" font-size="24" font-weight="700" fill="#2B1F17">PEQUEÑAS COSAS</text>
+
+  <text x="200" y="172" text-anchor="middle" font-family="'Lora', serif" font-style="italic" font-size="12" fill="#586E53">El arte del sosiego y la vida lenta</text>
+
+  <!-- Author Tag at Bottom -->
+  <text x="200" y="515" text-anchor="middle" font-family="'Lora', serif" font-size="15" font-weight="600" letter-spacing="1.5" fill="#2B1F17">LUCÍA NAVARRO</text>
+  <text x="200" y="534" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2" fill="#7A6855">ENSAYO & BIENESTAR</text>
+</svg>
