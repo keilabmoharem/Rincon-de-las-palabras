@@ -71,5 +71,5 @@
 
   <!-- Author Tag at Bottom -->
   <text x="200" y="515" text-anchor="middle" font-family="'Lora', serif" font-size="15" font-weight="600" letter-spacing="1.5" fill="#2B1F17">LUCÍA NAVARRO</text>
-  <text x="200" y="534" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2" fill="#7A6855">ENSAYO & BIENESTAR</text>
+  <text x="200" y="534" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2" fill="#7A6855">ENSAYO &amp; BIENESTAR</text>
 </svg>
