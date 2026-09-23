@@ -698,7 +698,289 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   7. Contact Page Layout & Formspree Form (Flexbox)
+   7. Reviews Section & Reader Testimonials (Flexbox)
+   -------------------------------------------------------------------------- */
+.reviews-section {
+  background: linear-gradient(180deg, var(--bg-parchment) 0%, #F6EDE5 100%);
+  border-top: 1px solid var(--border-warm);
+  border-bottom: 1px solid var(--border-warm);
+  padding: 4.5rem 1.5rem;
+}
+
+.reviews-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.reviews-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.85rem;
+}
+
+.reviews-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  color: var(--text-main);
+  line-height: 1.25;
+}
+
+.reviews-title em {
+  color: var(--accent-terracotta);
+  font-style: italic;
+}
+
+.reviews-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  line-height: 1.6;
+}
+
+.reviews-rating-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-full);
+  padding: 0.65rem 1.6rem;
+  box-shadow: var(--shadow-subtle);
+  margin-top: 0.5rem;
+}
+
+.rating-score-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating-number {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+}
+
+.rating-stars-gold {
+  color: var(--accent-amber);
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.rating-divider {
+  width: 1px;
+  height: 20px;
+  background-color: var(--border-warm);
+}
+
+.rating-stat-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.reviews-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.review-card {
+  flex: 1 1 calc(50% - 2rem);
+  min-width: 320px;
+  max-width: 580px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.4rem;
+  transition: var(--transition-smooth);
+  position: relative;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: #DCCBB6;
+}
+
+.review-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.review-stars {
+  color: var(--accent-amber);
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+}
+
+.review-verified-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-olive);
+  background-color: var(--accent-olive-light);
+  border: 1px solid rgba(91, 112, 85, 0.2);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.review-book-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--bg-parchment);
+  border: 1px solid var(--border-warm);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  transition: var(--transition-smooth);
+  width: fit-content;
+}
+
+.review-book-pill strong {
+  color: var(--accent-terracotta);
+  font-weight: 600;
+}
+
+.review-book-pill:hover {
+  background-color: var(--accent-terracotta-light);
+  border-color: var(--accent-terracotta);
+}
+
+.review-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1 0 auto;
+}
+
+.review-headline {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.35;
+}
+
+.review-text {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-style: italic;
+  position: relative;
+}
+
+.review-author-block {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-warm-subtle);
+}
+
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #FFFFFF;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-terracotta {
+  background: linear-gradient(135deg, #C35A38, #A84729);
+}
+
+.avatar-olive {
+  background: linear-gradient(135deg, #5B7055, #475842);
+}
+
+.avatar-amber {
+  background: linear-gradient(135deg, #D99B43, #B87E2E);
+}
+
+.avatar-wood {
+  background: linear-gradient(135deg, #6E5F57, #55443D);
+}
+
+.review-author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-author-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.review-author-role {
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+/* Banner acogedor para invitar a los lectores a dejar reseña */
+.reviews-cta-banner {
+  background-color: var(--bg-surface);
+  border: 2px dashed var(--border-warm);
+  border-radius: var(--radius-md);
+  padding: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  box-shadow: var(--shadow-subtle);
+}
+
+.reviews-cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 680px;
+}
+
+.reviews-cta-text h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--text-main);
+}
+
+.reviews-cta-text p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   8. Contact Page Layout & Formspree Form (Flexbox)
    -------------------------------------------------------------------------- */
 .contact-hero {
   background: linear-gradient(135deg, var(--bg-cream) 0%, #EFE5D8 100%);
@@ -999,7 +1281,7 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   9. Responsive Design & Media Queries
+   10. Responsive Design & Media Queries
    -------------------------------------------------------------------------- */
 @media (max-width: 960px) {
   .main-layout {
@@ -1018,6 +1300,11 @@ ul, ol {
 
   .contact-main {
     flex-direction: column;
+  }
+
+  .review-card {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
@@ -1114,6 +1401,20 @@ ul, ol {
   .nav-label-short {
     display: inline;
   }
+
+  .reviews-section {
+    padding: 3.2rem 1rem 3.5rem;
+  }
+
+  .reviews-container {
+    gap: 2.2rem;
+  }
+
+  .reviews-cta-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1154,6 +1455,23 @@ ul, ol {
     font-size: 0.78rem;
     padding: 0.28rem 0.2rem;
   }
+
+  .reviews-rating-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: var(--radius-md);
+    padding: 0.85rem 1rem;
+    width: 100%;
+  }
+
+  .rating-divider {
+    display: none;
+  }
+
+  .review-card {
+    padding: 1.5rem 1.15rem;
+    min-width: 0;
+  }
 }
 
 @media (max-width: 360px) {
@@ -1166,3 +1484,4 @@ ul, ol {
     padding: 0.2rem 0.45rem;
   }
 }
+

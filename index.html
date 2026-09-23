@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="El Rincón de las Palabras - Librería online independiente con temática acogedora (cozy). Catálogo curado de narrativa, poesía, botánica y libros que abrazan el alma.">
-  <title>El Rincón de las Palabras | Librería Online Independiente &amp; Acogedora</title>
+    content="El Rincón de las Palabras - Librería independiente. Catálogo curado de narrativa, poesía y libros que abrazan el alma.">
+  <title>El Rincón de las Palabras | Librería Independiente &amp; Acogedora</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -26,16 +26,24 @@
 
       <nav class="main-navigation" aria-label="Navegación principal">
         <ul class="nav-links">
-          <li class="nav-item"><a href="index.html" class="active" id="nav-inicio">Inicio</a></li>
-          <li class="nav-item"><a href="#catalogo" id="nav-catalogo">Catálogo</a></li>
-          <li class="nav-item"><a href="#sobre-nosotros" id="nav-sobre-nosotros">Sobre la Librería</a></li>
-          <li class="nav-item"><a href="pages/contacto.html" id="nav-contacto">Contacto</a></li>
+          <li class="nav-item"><a href="index.html" class="active" id="nav-inicio"><span
+                class="nav-label-long">Inicio</span><span class="nav-label-short">Inicio</span></a></li>
+          <li class="nav-item"><a href="#catalogo" id="nav-catalogo"><span class="nav-label-long">Catálogo</span><span
+                class="nav-label-short">Libros</span></a></li>
+          <li class="nav-item"><a href="#resenas" id="nav-resenas"><span class="nav-label-long">Reseñas</span><span
+                class="nav-label-short">Reseñas</span></a></li>
+          <li class="nav-item"><a href="#sobre-nosotros" id="nav-sobre-nosotros"><span class="nav-label-long">Sobre la
+                Librería</span><span class="nav-label-short">Librería</span></a></li>
+          <li class="nav-item"><a href="pages/contacto.html" id="nav-contacto"><span
+                class="nav-label-long">Contacto</span><span class="nav-label-short">Contacto</span></a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
         <span class="badge-cafe">
-          ☕ Café Abierto hasta 20:00
+          <span class="badge-icon" aria-hidden="true">☕</span>
+          <span class="badge-text-long">Café Abierto hasta 20:00</span>
+          <span class="badge-text-short">Café Abierto</span>
         </span>
       </div>
     </div>
@@ -97,7 +105,7 @@
             <span class="filter-count">1</span>
           </li>
           <li class="filter-item">
-            <span>Naturaleza &amp; Arte</span>
+            <span>Misterio &amp; Arte</span>
             <span class="filter-count">1</span>
           </li>
           <li class="filter-item">
@@ -113,7 +121,7 @@
 
       <div class="sidebar-cozy-note">
         <strong>📦 Envíos cuidados con amor</strong>
-        <span>Cada pedido incluye un marcapáginas botánico artesanal y una bolsita de té de hierbas de cortesía.</span>
+        <span>Cada pedido incluye un marcapáginas artesanal y una bolsita de té de hierbas de cortesía.</span>
       </div>
     </aside>
 
@@ -313,6 +321,192 @@
     </section>
   </main>
 
+  <!-- Sección de Reseñas de la Comunidad Lectora -->
+  <section class="reviews-section" id="resenas" aria-labelledby="reviews-title">
+    <div class="reviews-container">
+
+      <!-- Encabezado y Resumen de Calificación -->
+      <div class="reviews-header">
+        <span class="hero-badge">🕯️ Ecos de Nuestra Comunidad</span>
+        <h2 class="reviews-title" id="reviews-title">
+          Palabras sinceras de quienes <em>abrieron un libro</em> aquí
+        </h2>
+        <p class="reviews-subtitle">
+          Cada página leída deja una huella íntima. Compartimos las impresiones y reflexiones que nuestros lectores han
+          dejado en nuestro libro de visitas y café literario.
+        </p>
+
+        <!-- Barra de Calificación Global -->
+        <div class="reviews-rating-bar" aria-label="Calificación media 4.9 de 5 basada en 250 lecturas">
+          <div class="rating-score-group">
+            <span class="rating-number">4.9</span>
+            <span class="rating-stars-gold" aria-hidden="true">★★★★★</span>
+          </div>
+          <span class="rating-divider" aria-hidden="true"></span>
+          <span class="rating-stat-text">Más de 250 lecturas compartidas</span>
+          <span class="rating-divider" aria-hidden="true"></span>
+          <span class="rating-stat-text">🌿 100% historias con alma</span>
+        </div>
+      </div>
+
+      <!-- Cuadrícula Flexbox de Reseñas -->
+      <div class="reviews-grid">
+
+        <!-- Reseña 1: El Murmullo de las Hojas -->
+        <article class="review-card" id="review-1">
+          <div class="review-card-top">
+            <div class="review-stars" aria-label="Calificación 5 de 5 estrellas">
+              ★★★★★
+            </div>
+            <span class="review-verified-badge">
+              <span aria-hidden="true">✓</span> Lectura Verificada
+            </span>
+          </div>
+
+          <a href="#book-murmullo-hojas" class="review-book-pill"
+            title="Ver libro El Murmullo de las Hojas en el catálogo">
+            <span aria-hidden="true">🍂</span>
+            <span>Sobre: <strong>El Murmullo de las Hojas</strong></span>
+          </a>
+
+          <div class="review-body">
+            <h3 class="review-headline">«Un refugio de paz para los días grises»</h3>
+            <p class="review-text">
+              «Llegó envuelto en papel craft con un marcapáginas de lavanda precioso. La prosa de Clara Isabel me
+              acompañó en un fin de semana lluvioso junto a una taza de té chai. Pocas veces un libro me ha hecho sentir
+              tan en calma.»
+            </p>
+          </div>
+
+          <footer class="review-author-block">
+            <div class="review-avatar avatar-terracotta" aria-hidden="true">CR</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Clara Rossi</span>
+              <span class="review-author-role">Lectora de otoño · Buenos Aires</span>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Reseña 2: Café en Ciudades Lejanas -->
+        <article class="review-card" id="review-2">
+          <div class="review-card-top">
+            <div class="review-stars" aria-label="Calificación 5 de 5 estrellas">
+              ★★★★★
+            </div>
+            <span class="review-verified-badge">
+              <span aria-hidden="true">✓</span> Lectura Verificada
+            </span>
+          </div>
+
+          <a href="#book-cafe-ciudades" class="review-book-pill"
+            title="Ver libro Café en Ciudades Lejanas en el catálogo">
+            <span aria-hidden="true">☕</span>
+            <span>Sobre: <strong>Café en Ciudades Lejanas</strong></span>
+          </a>
+
+          <div class="review-body">
+            <h3 class="review-headline">«Huele a café tostado y nostalgia pura»</h3>
+            <p class="review-text">
+              «Las crónicas de Mateo me transportaron a callejones empedrados y conversaciones de barra de las que ya
+              casi no quedan. La encuadernación cosida a mano es una obra de arte por sí sola. Totalmente recomendado.»
+            </p>
+          </div>
+
+          <footer class="review-author-block">
+            <div class="review-avatar avatar-olive" aria-hidden="true">MB</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Martín Benítez</span>
+              <span class="review-author-role">Viajero &amp; cronista · Lomas de Zamora</span>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Reseña 3: La Quietud de las Pequeñas Cosas -->
+        <article class="review-card" id="review-3">
+          <div class="review-card-top">
+            <div class="review-stars" aria-label="Calificación 5 de 5 estrellas">
+              ★★★★★
+            </div>
+            <span class="review-verified-badge">
+              <span aria-hidden="true">✓</span> Lectura Verificada
+            </span>
+          </div>
+
+          <a href="#book-quietud-cosas" class="review-book-pill"
+            title="Ver libro La Quietud de las Pequeñas Cosas en el catálogo">
+            <span aria-hidden="true">🕯️</span>
+            <span>Sobre: <strong>La Quietud de las Pequeñas Cosas</strong></span>
+          </a>
+
+          <div class="review-body">
+            <h3 class="review-headline">«Te enseña a desacelerar el ritmo cotidiano»</h3>
+            <p class="review-text">
+              «Compré este ensayo por recomendación del librero cuando visité el café de la librería. Leerlo con luz
+              tenue cada noche transformó mi rutina. Es un abrazo cálido para la mente en tiempos acelerados.»
+            </p>
+          </div>
+
+          <footer class="review-author-block">
+            <div class="review-avatar avatar-amber" aria-hidden="true">LN</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Luciana Navarro</span>
+              <span class="review-author-role">Club de lectura de los jueves · Banfield</span>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Reseña 4: Botánica para Soñadores -->
+        <article class="review-card" id="review-4">
+          <div class="review-card-top">
+            <div class="review-stars" aria-label="Calificación 5 de 5 estrellas">
+              ★★★★★
+            </div>
+            <span class="review-verified-badge">
+              <span aria-hidden="true">✓</span> Lectura Verificada
+            </span>
+          </div>
+
+          <a href="#book-botanica-sonadores" class="review-book-pill"
+            title="Ver libro Botánica para Soñadores en el catálogo">
+            <span aria-hidden="true">🌿</span>
+            <span>Sobre: <strong>Botánica para Soñadores</strong></span>
+          </a>
+
+          <div class="review-body">
+            <h3 class="review-headline">«Ilustraciones botánicas que roban el aliento»</h3>
+            <p class="review-text">
+              «La delicadeza de las láminas y la sensibilidad con la que describe las plantas silvestres me fascinó. Ya
+              es una joya indiscutible en mi biblioteca personal. Gracias por la esmerada selección de autores
+              independientes.»
+            </p>
+          </div>
+
+          <footer class="review-author-block">
+            <div class="review-avatar avatar-wood" aria-hidden="true">DF</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Diego Fernández</span>
+              <span class="review-author-role">Ilustrador naturalista · Adrogué</span>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+
+      <!-- Banner de Invitación a Compartir Reseña -->
+      <aside class="reviews-cta-banner" aria-label="Invitación para compartir reseña">
+        <div class="reviews-cta-text">
+          <h3>¿Has disfrutado de alguna de nuestras historias?</h3>
+          <p>Nos encanta saber qué sentimientos y conversaciones despertaron nuestras páginas en tu hogar. Cuéntanos tu
+            experiencia y formará parte de nuestro rincón.</p>
+        </div>
+        <a href="pages/contacto.html" class="btn-primary" id="btn-enviar-resena">
+          Compartir mi Reseña ✨
+        </a>
+      </aside>
+
+    </div>
+  </section>
+
   <!-- Sección Sobre Nosotros / Alma de la Librería -->
   <section class="hero-banner" id="sobre-nosotros" aria-labelledby="about-heading">
     <div class="hero-container">
@@ -353,6 +547,7 @@
           <ul class="footer-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="#catalogo">Catálogo Completo</a></li>
+            <li><a href="#resenas">Reseñas de Lectores</a></li>
             <li><a href="#sobre-nosotros">Sobre la Librería</a></li>
             <li><a href="pages/contacto.html">Contacto &amp; Pedidos Especiales</a></li>
           </ul>
@@ -379,8 +574,8 @@
         <div class="footer-col">
           <h4 class="footer-col-title">Ubicación</h4>
           <p class="footer-description">
-            Callejón de los Jazmines 14, Barrio Antiguo.<br>
-            Cerca de la Plaza de las Acacias.<br>
+            Luzuriaga 123, Llavallol.<br>
+            Cerca de la Plaza Fiorentino Ameghino.<br>
             Tel: +34 912 345 678<br>
             hola@elrincondelaspalabras.com
           </p>
