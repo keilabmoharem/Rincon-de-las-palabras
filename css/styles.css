@@ -1,7 +1,6 @@
 /* ==========================================================================
    Book Store - "El Rincón de las Palabras"
    Theme: Cozy & Indie Style
-   External Main Stylesheet (Strict Flexbox Architecture)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -15,7 +14,7 @@
   --bg-cream: #F5EFEB;
   --bg-surface: #FFFFFF;
   --bg-card-hover: #FCFAF6;
-  
+
   /* Text & Inks */
   --text-main: #2C221E;
   --text-muted: #6E5F57;
@@ -48,7 +47,7 @@
   /* Transitions */
   --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Radii */
+  /* Radius */
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 18px;
@@ -95,18 +94,22 @@ a {
   transition: var(--transition-smooth);
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font-family: inherit;
   font-size: 1rem;
   color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
 /* --------------------------------------------------------------------------
-   3. Header & Navigation (Flexbox)
+   3. Header & Navigation
    -------------------------------------------------------------------------- */
 .site-header {
   background-color: var(--bg-surface);
@@ -229,15 +232,15 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   4. Hero / Welcome Banner (Flexbox)
+   4. Welcome Banner
    -------------------------------------------------------------------------- */
-.hero-banner {
+.welcome-banner {
   background: linear-gradient(135deg, var(--bg-cream) 0%, #F1E5D8 100%);
   border-bottom: 1px solid var(--border-warm);
   padding: 3rem 1.5rem;
 }
 
-.hero-container {
+.welcome-container {
   max-width: 1240px;
   margin: 0 auto;
   display: flex;
@@ -247,14 +250,14 @@ ul, ol {
   flex-wrap: wrap;
 }
 
-.hero-text-block {
+.welcome-text-block {
   flex: 1 1 500px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.hero-badge {
+.welcome-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -270,7 +273,7 @@ ul, ol {
   align-self: flex-start;
 }
 
-.hero-heading {
+.welcome-heading {
   font-family: var(--font-serif);
   font-size: clamp(2rem, 4vw, 2.9rem);
   font-weight: 700;
@@ -278,18 +281,18 @@ ul, ol {
   color: var(--text-main);
 }
 
-.hero-heading em {
+.welcome-heading em {
   font-style: italic;
   color: var(--accent-terracotta);
 }
 
-.hero-description {
+.welcome-description {
   font-size: 1.05rem;
   color: var(--text-muted);
   max-width: 580px;
 }
 
-.hero-cta-group {
+.welcome-cta-group {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -297,7 +300,7 @@ ul, ol {
   flex-wrap: wrap;
 }
 
-.hero-spotlight {
+.welcome-spotlight {
   flex: 0 1 360px;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-warm);
@@ -337,7 +340,7 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   5. Main Layout & Catalog (Flexbox)
+   5. Main Layout & Catalog 
    -------------------------------------------------------------------------- */
 .main-layout {
   max-width: 1240px;
@@ -475,7 +478,7 @@ ul, ol {
   color: var(--text-light);
 }
 
-/* Products Flexbox Grid */
+/* Products*/
 .books-container {
   display: flex;
   flex-wrap: wrap;
@@ -698,7 +701,7 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   7. Reviews Section & Reader Testimonials (Flexbox)
+   7. Reviews Section & Reader reviews
    -------------------------------------------------------------------------- */
 .reviews-section {
   background: linear-gradient(180deg, var(--bg-parchment) 0%, #F6EDE5 100%);
@@ -946,7 +949,7 @@ ul, ol {
   color: var(--text-light);
 }
 
-/* Banner acogedor para invitar a los lectores a dejar reseña */
+/* Banner para invitar a los lectores a dejar reseña */
 .reviews-cta-banner {
   background-color: var(--bg-surface);
   border: 2px dashed var(--border-warm);
@@ -980,16 +983,16 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   8. Contact Page Layout & Formspree Form (Flexbox)
+   8. Contact Page Layout & Formspree Form
    -------------------------------------------------------------------------- */
-.contact-hero {
+.contact-section {
   background: linear-gradient(135deg, var(--bg-cream) 0%, #EFE5D8 100%);
   border-bottom: 1px solid var(--border-warm);
   padding: 2.5rem 1.5rem;
   text-align: center;
 }
 
-.contact-hero-container {
+.contact-container {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -998,13 +1001,13 @@ ul, ol {
   gap: 0.75rem;
 }
 
-.contact-hero-heading {
+.contact-heading {
   font-family: var(--font-serif);
   font-size: clamp(2rem, 3.5vw, 2.6rem);
   color: var(--text-main);
 }
 
-.contact-hero-subtitle {
+.contact-subtitle {
   font-size: 1.05rem;
   color: var(--text-muted);
   max-width: 600px;
@@ -1173,7 +1176,7 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   8. Footer (Flexbox)
+   8. Footer
    -------------------------------------------------------------------------- */
 .site-footer {
   background-color: #241A16;
@@ -1484,4 +1487,3 @@ ul, ol {
     padding: 0.2rem 0.45rem;
   }
 }
-
