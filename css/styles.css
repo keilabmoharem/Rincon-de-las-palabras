@@ -227,20 +227,26 @@ ol {
   display: none;
 }
 
+.badge-icon {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
 .badge-text-short {
   display: none;
 }
 
 /* --------------------------------------------------------------------------
-   4. Welcome Banner
+   4. Banner Principal (Flexbox)
    -------------------------------------------------------------------------- */
-.welcome-banner {
+.banner {
   background: linear-gradient(135deg, var(--bg-cream) 0%, #F1E5D8 100%);
   border-bottom: 1px solid var(--border-warm);
   padding: 3rem 1.5rem;
 }
 
-.welcome-container {
+.banner-container {
   max-width: 1240px;
   margin: 0 auto;
   display: flex;
@@ -250,14 +256,14 @@ ol {
   flex-wrap: wrap;
 }
 
-.welcome-text-block {
+.banner-text-block {
   flex: 1 1 500px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.welcome-badge {
+.section-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -273,7 +279,7 @@ ol {
   align-self: flex-start;
 }
 
-.welcome-heading {
+.banner-heading {
   font-family: var(--font-serif);
   font-size: clamp(2rem, 4vw, 2.9rem);
   font-weight: 700;
@@ -281,18 +287,18 @@ ol {
   color: var(--text-main);
 }
 
-.welcome-heading em {
+.banner-heading em {
   font-style: italic;
   color: var(--accent-terracotta);
 }
 
-.welcome-description {
+.banner-description {
   font-size: 1.05rem;
   color: var(--text-muted);
   max-width: 580px;
 }
 
-.welcome-cta-group {
+.banner-cta-group {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -300,7 +306,7 @@ ol {
   flex-wrap: wrap;
 }
 
-.welcome-spotlight {
+.banner-spotlight {
   flex: 0 1 360px;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-warm);
@@ -983,7 +989,7 @@ ol {
 }
 
 /* --------------------------------------------------------------------------
-   8. Contact Page Layout & Formspree Form
+   8. Contact Page Layout & Formspree Form (Flexbox)
    -------------------------------------------------------------------------- */
 .contact-section {
   background: linear-gradient(135deg, var(--bg-cream) 0%, #EFE5D8 100%);
@@ -1421,11 +1427,11 @@ ol {
 }
 
 @media (max-width: 680px) {
-  .hero-container {
+  .banner-container {
     flex-direction: column;
   }
 
-  .hero-spotlight {
+  .banner-spotlight {
     width: 100%;
     flex: 1 1 100%;
   }
