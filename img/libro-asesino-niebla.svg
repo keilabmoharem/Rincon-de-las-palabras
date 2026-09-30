@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fogBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#19191B"/>
+      <stop offset="50%" stop-color="#242120"/>
+      <stop offset="100%" stop-color="#0E0D0E"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FFDD78" stop-opacity="0.85"/>
+      <stop offset="30%" stop-color="#E5A638" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#3D2912" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#19191B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="amberGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E5A638"/>
+      <stop offset="50%" stop-color="#FFF0BA"/>
+      <stop offset="100%" stop-color="#C27A23"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo de niebla y adoquines -->
+  <rect width="400" height="600" fill="url(#fogBg)"/>
+
+  <!-- Sombra de lomo -->
+  <rect x="0" y="0" width="18" height="600" fill="#000000" opacity="0.45"/>
+  <line x1="18" y1="0" x2="18" y2="600" stroke="#7A6855" stroke-width="0.75" opacity="0.4"/>
+
+  <!-- Marco expediente policial de época -->
+  <rect x="25" y="25" width="350" height="550" fill="none" stroke="#C27A23" stroke-width="1.2" opacity="0.6"/>
+  <rect x="31" y="31" width="338" height="538" fill="none" stroke="#7A6855" stroke-width="0.75" opacity="0.4"/>
+
+  <!-- Luz del farol victoriano -->
+  <circle cx="200" cy="210" r="115" fill="url(#lampGlow)"/>
+
+  <!-- Farol de gas victoriano de hierro forjado -->
+  <g transform="translate(200, 160)">
+    <!-- Poste superior y brazos ornamentados -->
+    <path d="M-30,-45 C-15,-70 15,-70 30,-45" fill="none" stroke="#0E0D0E" stroke-width="3"/>
+    <line x1="0" y1="-70" x2="0" y2="-45" stroke="#0E0D0E" stroke-width="3"/>
+    <!-- Techo del farol -->
+    <polygon points="-28,-20 0,-45 28,-20" fill="#0E0D0E"/>
+    <circle cx="0" cy="-48" r="4" fill="#C27A23"/>
+    <!-- Cristal y llama de gas -->
+    <polygon points="-22,-20 -15,35 15,35 22,-20" fill="#FFF2BD" opacity="0.4" stroke="#0E0D0E" stroke-width="2"/>
+    <ellipse cx="0" cy="8" rx="7" ry="14" fill="#FFA500"/>
+    <ellipse cx="0" cy="8" rx="4" ry="9" fill="#FFF5C0"/>
+    <!-- Base del farol y poste hacia abajo -->
+    <polygon points="-16,35 16,35 0,55" fill="#0E0D0E"/>
+    <line x1="0" y1="55" x2="0" y2="180" stroke="#0E0D0E" stroke-width="4.5"/>
+  </g>
+
+  <!-- Silueta misteriosa en la niebla con gabardina y sombrero de copa -->
+  <g transform="translate(260, 275) scale(0.9)">
+    <!-- Sombrero de copa -->
+    <rect x="-12" y="-45" width="24" height="24" rx="2" fill="#0A090B"/>
+    <ellipse cx="0" cy="-21" rx="19" ry="4" fill="#0A090B"/>
+    <!-- Cabeza y bufanda -->
+    <circle cx="0" cy="-14" r="10" fill="#0A090B"/>
+    <!-- Capa / Gabardina con solapas -->
+    <path d="M-18,-4 C-35,35 -40,95 -45,115 L25,115 C20,90 15,30 2,-4 Z" fill="#060507"/>
+    <!-- Niebla a los pies -->
+    <ellipse cx="-10" cy="115" rx="45" ry="12" fill="#E5A638" opacity="0.2"/>
+  </g>
+
+  <!-- Lupa de detective sobre el expediente -->
+  <g transform="translate(130, 295) scale(0.75)">
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#C27A23" stroke-width="4"/>
+    <circle cx="0" cy="0" r="30" fill="#FFF0BA" opacity="0.18"/>
+    <!-- Mango de la lupa -->
+    <line x1="24" y1="24" x2="55" y2="55" stroke="#7A4B1A" stroke-width="7" stroke-linecap="round"/>
+    <line x1="24" y1="24" x2="30" y2="30" stroke="#C27A23" stroke-width="8"/>
+  </g>
+
+  <!-- Adoquines en la calle mojada -->
+  <path d="M35,370 C120,365 280,365 365,370" stroke="#483D36" stroke-width="1.5" stroke-dasharray="12,6" opacity="0.4"/>
+  <path d="M35,385 C120,380 280,380 365,385" stroke="#483D36" stroke-width="1.5" stroke-dasharray="14,7" opacity="0.4"/>
+
+  <!-- Encabezado y Título -->
+  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" fill="#C27A23">TRUE CRIME &amp; ARCHIVO POLICIAL</text>
+  <line x1="120" y1="86" x2="280" y2="86" stroke="#8E2424" stroke-width="1"/>
+
+  <text x="200" y="415" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="14" font-weight="600" letter-spacing="3" fill="#D9A877">LAS ACTAS FORENSES DE</text>
+  <text x="200" y="450" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="27" font-weight="700" letter-spacing="2" fill="url(#amberGold)">EL ASESINO</text>
+  <text x="200" y="480" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="21" font-weight="700" letter-spacing="2" fill="url(#amberGold)">DE LA NIEBLA</text>
+
+  <text x="200" y="505" text-anchor="middle" font-family="'Lora', Georgia, serif" font-style="italic" font-size="11" fill="#C2A992">Crónicas reales de Whitechapel · Invierno 1888</text>
+
+  <!-- Autor -->
+  <text x="200" y="540" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="13" font-weight="700" letter-spacing="2" fill="#EADFCF">INSPECTOR T. G. REID</text>
+  <text x="200" y="556" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" letter-spacing="3" fill="#8E2424">REGISTROS ORIGINALES</text>
+</svg>

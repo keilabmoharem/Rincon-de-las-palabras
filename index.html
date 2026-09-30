@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="El Rincón de las Palabras - Librería para fanáticos del True Crime"
+    />
+    <title>
+      El Rincón de las Palabras | Misterio, True Crime y Relatos góticos y
+      policiales
+    </title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Encabezado Principal y Navegación -->
+    <header class="site-header">
+      <div class="header-container">
+        <a href="index.html" class="brand-link" id="brand-home-link">
+          <img
+            src="img/logo-bookstore.svg"
+            alt="Logotipo El Rincón de las Palabras"
+            class="brand-logo"
+            width="44"
+            height="44"
+          />
+          <div class="brand-info">
+            <span class="brand-title">El Rincón de las Palabras</span>
+            <span class="brand-tagline"
+              >Misterio · True Crime · Relatos góticos y policiales</span
+            >
+          </div>
+        </a>
+
+        <nav class="main-navigation">
+          <ul class="nav-links">
+            <li class="nav-item">
+              <a href="index.html" class="active" id="nav-inicio"
+                ><span class="nav-label-long">Inicio</span
+                ><span class="nav-label-short">Inicio</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#catalogo" id="nav-catalogo"
+                ><span class="nav-label-long">Catálogo</span
+                ><span class="nav-label-short">Casos</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#resenas" id="nav-resenas"
+                ><span class="nav-label-long">Reseñas</span
+                ><span class="nav-label-short">Reseñas</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#sobre-nosotros" id="nav-sobre-nosotros"
+                ><span class="nav-label-long">Sobre la librería</span
+                ><span class="nav-label-short">Librería</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="pages/contacto.html" id="nav-contacto"
+                ><span class="nav-label-long">Contacto</span
+                ><span class="nav-label-short">Contacto</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <span class="badge-cafe">
+            <span class="badge-icon">☕</span>
+            <span class="badge-text-long">Café abierto hasta 20:00</span>
+            <span class="badge-text-short">Café abierto</span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner de Bienvenida -->
+    <section class="banner">
+      <div class="banner-container">
+        <div class="banner-text-block">
+          <span class="section-badge"
+            >🔍 Club de Detectives y café de especialidad</span
+          >
+          <h1 class="banner-heading" id="banner-title">
+            Los enigmas más oscuros se develan
+            <em>entre páginas prohibidas</em> y un buen café.
+          </h1>
+          <p class="banner-description">
+            Librería de barrio para mentes perspicaces y amantes del suspenso.
+            Una selección de misterios, crónicas policiales y atmósfera gótica.
+          </p>
+          <div class="banner-cta-group">
+            <a href="#catalogo" class="btn-primary" id="btn-explorar-catalogo"
+              >Explorar casos y libros</a
+            >
+            <a
+              href="pages/contacto.html"
+              class="btn-secondary"
+              id="btn-pedidos-especiales"
+              >Reportar un caso / Contacto</a
+            >
+          </div>
+        </div>
+
+        <div class="banner-spotlight">
+          <div class="spotlight-header">
+            <span>Expediente de la semana</span>
+            <span>★ 5.0</span>
+          </div>
+          <blockquote class="spotlight-quote">
+            «En el laberinto de la mente humana, cada coartada esconde una
+            sombra que la verdad terminará por iluminar.»
+          </blockquote>
+          <span class="spotlight-author"
+            >— Inspirado en Agatha Christie y E. A. Poe</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenedor Principal: Filtros y Catálogo -->
+    <main class="main-layout" id="catalogo">
+      <!-- Barra Lateral de Categorías y Filtros Semánticos -->
+      <aside class="filters-sidebar">
+        <div class="sidebar-title">
+          <span>Archivos y géneros</span>
+          <span>🗝️</span>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Clasificación de expedientes</span>
+          <ul class="filter-list">
+            <li class="filter-item active">
+              <span>Todos los casos y libros</span>
+              <span class="filter-count">6</span>
+            </li>
+            <li class="filter-item">
+              <span>Misterios clásicos</span>
+              <span class="filter-count">2</span>
+            </li>
+            <li class="filter-item">
+              <span>Misterios góticos</span>
+              <span class="filter-count">2</span>
+            </li>
+            <li class="filter-item">
+              <span>True crime y archivo policial</span>
+              <span class="filter-count">1</span>
+            </li>
+            <li class="filter-item">
+              <span>Terror psicológico</span>
+              <span class="filter-count">1</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-cozy-note">
+          <strong
+            >🔎 Envíos protegidos y pensados para que el libro llegue impecable
+            a tus manos.</strong
+          >
+          <span
+            >Cada pedido incluye un marcapáginas de investigador con clave
+            cifrada para resolver. Aquellos detectives que se acerquen con la
+            respuesta correcta, recibirán un descuento en nuestro café.</span
+          >
+        </div>
+      </aside>
+
+      <!-- Sección del Catálogo de Libros -->
+      <section class="catalog-section">
+        <div class="catalog-header">
+          <h2 class="catalog-title" id="catalog-heading">
+            Novedades y obras de misterio
+          </h2>
+          <span class="catalog-stats">Mostrando 6 expedientes literarios</span>
+        </div>
+
+        <!-- Tarjetas de Libros -->
+        <div class="books-container">
+          <!-- Libro 1: El Enigma de Mansión Blackwood -->
+          <article class="book-card" id="book-mansion-blackwood">
+            <div class="book-cover-wrapper">
+              <img
+                src="img/libro-mansion-blackwood.svg"
+                alt="Portada del libro El Enigma de Mansión Blackwood con mansión victoriana bajo tormenta"
+                class="book-cover-img"
+                width="400"
+                height="600"
+                loading="lazy"
+              />
+              <span class="book-badge badge-featured">Caso del Mes</span>
+            </div>
+            <div class="book-card-body">
+              <span class="book-genre">Misterio</span>
+              <h3 class="book-title">El enigma de Mansión Blackwood</h3>
+              <p class="book-author">Por Lady Beatrice Sterling</p>
+              <div class="book-rating">
+                <span>★★★★★</span>
+                <span class="book-reviews">(48 opiniones)</span>
+              </div>
+              <p class="book-synopsis">
+                Siete invitados cenan bajo el fulgor de los candelabros mientras
+                una tormenta aísla la colina de Devonshire. A medianoche, Lord
+                Blackwood yace sin vida en una biblioteca cerrada con doble
+                cerrojo interior.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <div class="book-price-block">
+                <span class="book-price">$24.500</span>
+                <span class="book-price-format">Tapa dura</span>
+              </div>
+              <button
+                type="button"
+                class="btn-primary btn-sm"
+                id="btn-add-blackwood"
+              >
+                Añadir al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- Libro 2: El Cuervo y las Sombras -->
+          <article class="book-card" id="book-cuervo-sombras">
+            <div class="book-cover-wrapper">
+              <img
+                src="img/libro-cuervo-sombras.svg"
+                alt="Portada del libro El Cuervo y las Sombras con cuervo y ventana de noche"
+                class="book-cover-img"
+                width="400"
+                height="600"
+                loading="lazy"
+              />
+              <span class="book-badge badge-classic">Clásico Gótico</span>
+            </div>
+            <div class="book-card-body">
+              <span class="book-genre">Misterio y terror psicológico</span>
+              <h3 class="book-title">El cuervo y las sombras</h3>
+              <p class="book-author">Por Edgar A. Ravenswood</p>
+              <div class="book-rating">
+                <span>★★★★★</span>
+                <span class="book-reviews">(56 opiniones)</span>
+              </div>
+              <p class="book-synopsis">
+                Un descenso a las profundidades de la paranoia y la culpa moral.
+                Relatos de campanas a medianoche, aposentos en penumbra y el
+                aleteo incesante de un ave negra que anuncia la caída de la
+                cordura humana.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <div class="book-price-block">
+                <span class="book-price">$22.800</span>
+                <span class="book-price-format">Encuadernación en tela</span>
+              </div>
+              <button
+                type="button"
+                class="btn-primary btn-sm"
+                id="btn-add-cuervo"
+              >
+                Añadir al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- Libro 3: Cianuro a las Cinco -->
+          <article class="book-card" id="book-cianuro-cinco">
+            <div class="book-cover-wrapper">
+              <img
+                src="img/libro-cianuro-cinco.svg"
+                alt="Portada del libro Cianuro a las Cinco con taza de té de porcelana y veneno"
+                class="book-cover-img"
+                width="400"
+                height="600"
+                loading="lazy"
+              />
+              <span class="book-badge badge-award">Alta Sociedad</span>
+            </div>
+            <div class="book-card-body">
+              <span class="book-genre">Misterios clásicos</span>
+              <h3 class="book-title">Cianuro a las cinco</h3>
+              <p class="book-author">Por M. C. Hastings</p>
+              <div class="book-rating">
+                <span>★★★★★</span>
+                <span class="book-reviews">(63 opiniones)</span>
+              </div>
+              <p class="book-synopsis">
+                Durante la distinguida hora del té en una residencia de Mayfair,
+                el magnate de los ferrocarriles colapsa ante doce comensales.
+                Una cucharilla de plata, un sutil olor a almendras amargas y
+                ningún inocente creíble.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <div class="book-price-block">
+                <span class="book-price">$21.900</span>
+                <span class="book-price-format">Tapa blanda con solapas</span>
+              </div>
+              <button
+                type="button"
+                class="btn-primary btn-sm"
+                id="btn-add-cianuro"
+              >
+                Añadir al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- Libro 4: El Asesino de la Niebla -->
+          <article class="book-card" id="book-asesino-niebla">
+            <div class="book-cover-wrapper">
+              <img
+                src="img/libro-asesino-niebla.svg"
+                alt="Portada de El Asesino de la Niebla con farol de gas y adoquines victorianos"
+                class="book-cover-img"
+                width="400"
+                height="600"
+                loading="lazy"
+              />
+              <span class="book-badge badge-indie">True Crime</span>
+            </div>
+            <div class="book-card-body">
+              <span class="book-genre">Archivo policial y forense</span>
+              <h3 class="book-title">El asesino de la niebla</h3>
+              <p class="book-author">Por Inspector Arthur Finch</p>
+              <div class="book-rating">
+                <span>★★★★★</span>
+                <span class="book-reviews">(71 opiniones)</span>
+              </div>
+              <p class="book-synopsis">
+                La recopilación definitiva de diarios y notas de campo de
+                Scotland Yard. Una investigación forense meticulosa sobre los
+                crímenes seriales que sembraron el pánico en los adoquines
+                londinenses durante el otoño de 1888.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <div class="book-price-block">
+                <span class="book-price">$26.400</span>
+                <span class="book-price-format">Archivo de investigación</span>
+              </div>
+              <button
+                type="button"
+                class="btn-primary btn-sm"
+                id="btn-add-niebla"
+              >
+                Añadir al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- Libro 5: La Coartada del Expreso de Medianoche-->
+          <article class="book-card" id="book-expreso-medianoche">
+            <div class="book-cover-wrapper">
+              <img
+                src="img/libro-expreso-medianoche.svg"
+                alt="Portada del libro La Coartada del Expreso de Medianoche con locomotora a vapor y nieve"
+                class="book-cover-img"
+                width="400"
+                height="600"
+                loading="lazy"
+              />
+              <span class="book-badge badge-featured">Misterio</span>
+            </div>
+            <div class="book-card-body">
+              <span class="book-genre">Crimen</span>
+              <h3 class="book-title">La coartada del expreso de medianoche</h3>
+              <p class="book-author">Por Juliette De la Tour</p>
+              <div class="book-rating">
+                <span>★★★★★</span>
+                <span class="book-reviews">(58 opiniones)</span>
+              </div>
+              <p class="book-synopsis">
+                El tren nocturno queda inmovilizado en un desfiladero alpino por
+                una avalancha. Al amanecer, un acaudalado diplomático es
+                encontrado muerto en su camarote cerrado con cerrojo. Doce
+                viajeros, doce coartadas blindadas.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <div class="book-price-block">
+                <span class="book-price">$23.700</span>
+                <span class="book-price-format">Edición de bolsillo</span>
+              </div>
+              <button
+                type="button"
+                class="btn-primary btn-sm"
+                id="btn-add-expreso"
+              >
+                Añadir al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- Libro 6: El Corazón Delator y Otros Crímenes (Edgar Allan Poe) -->
+          <article class="book-card" id="book-corazon-delator">
+            <div class="book-cover-wrapper">
+              <img
+                src="img/libro-corazon-delator.svg"
+                alt="Portada del libro El Corazón Delator con farol victoriano y piso de madera"
+                class="book-cover-img"
+                width="400"
+                height="600"
+                loading="lazy"
+              />
+              <span class="book-badge badge-classic">Obra Maestra</span>
+            </div>
+            <div class="book-card-body">
+              <span class="book-genre">Suspenso</span>
+              <h3 class="book-title">El corazón delator y otros crímenes</h3>
+              <p class="book-author">Por Edgar Allan Poe</p>
+              <div class="book-rating">
+                <span>★★★★★</span>
+                <span class="book-reviews">(84 opiniones)</span>
+              </div>
+              <p class="book-synopsis">
+                El crimen perfecto concebido con frialdad quirúrgica, destruido
+                únicamente por los latidos ensordecedores que brotan de los
+                maderos del suelo ante la atenta mirada de los oficiales de
+                policía.
+              </p>
+            </div>
+            <div class="book-card-footer">
+              <div class="book-price-block">
+                <span class="book-price">$19.900</span>
+                <span class="book-price-format">Papel ahuesado</span>
+              </div>
+              <button
+                type="button"
+                class="btn-primary btn-sm"
+                id="btn-add-corazon"
+              >
+                Añadir al carrito
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Sección de Reseñas de la Comunidad Lectora -->
+    <section class="reviews-section" id="resenas">
+      <div class="reviews-container">
+        <!-- Encabezado y Resumen de Calificación -->
+        <div class="reviews-header">
+          <span class="section-badge">Expedientes comentados</span>
+          <h2 class="reviews-title" id="reviews-title">
+            Testimonios de <em>nuestros detectives y lectores</em>
+          </h2>
+          <p class="reviews-subtitle">
+            Desde enigmas que parecen imposibles de resolver hasta archivos
+            forenses de True Crime analizados por nuestros lectores.
+          </p>
+
+          <!-- Barra de Calificación Global -->
+          <div class="reviews-rating-bar">
+            <div class="rating-score-group">
+              <span class="rating-number">4.9</span>
+              <span class="rating-stars-gold">★★★★★</span>
+            </div>
+            <span class="rating-divider"></span>
+            <span class="rating-stat-text">Más de 380 misterios resueltos</span>
+            <span class="rating-divider"></span>
+            <span class="rating-stat-text">Suspenso garantizado</span>
+          </div>
+        </div>
+
+        <!-- Grilla de Reseñas -->
+        <div class="reviews-grid">
+          <!-- Reseña 1: El enigma de Mansión Blackwood -->
+          <article class="review-card" id="review-1">
+            <div class="review-card-top">
+              <div class="review-stars">★★★★★</div>
+              <span class="review-verified-badge">
+                <span>✓</span> Lectura Verificada
+              </span>
+            </div>
+
+            <a
+              href="#book-mansion-blackwood"
+              class="review-book-pill"
+              title="Ver libro El enigma de Mansión Blackwood en el catálogo"
+            >
+              <span>🗝️</span>
+              <span
+                >Sobre: <strong>El enigma de Mansión Blackwood</strong></span
+              >
+            </a>
+
+            <div class="review-body">
+              <h3 class="review-headline">
+                «Digno del mejor Poirot; no pude adivinar al asesino»
+              </h3>
+              <p class="review-text">
+                «La atmósfera de la mansión en Devonshire bajo la lluvia
+                torrencial te atrapa al instante. Cada pista está colocada con
+                precisión matemática. El plano incluido en la contratapa te hace
+                sentir un auténtico detective de Scotland Yard.»
+              </p>
+            </div>
+
+            <footer class="review-author-block">
+              <div class="review-avatar avatar-terracotta">HP</div>
+              <div class="review-author-info">
+                <span class="review-author-name">Hernán Poirot</span>
+                <span class="review-author-role"
+                  >Club de Misterio · Buenos Aires</span
+                >
+              </div>
+            </footer>
+          </article>
+
+          <!-- Reseña 2: El asesino de la niebla -->
+          <article class="review-card" id="review-2">
+            <div class="review-card-top">
+              <div class="review-stars">★★★★★</div>
+              <span class="review-verified-badge">
+                <span>✓</span> Lectura Verificada
+              </span>
+            </div>
+
+            <a
+              href="#book-asesino-niebla"
+              class="review-book-pill"
+              title="Ver libro El asesino de la niebla en el catálogo"
+            >
+              <span>🔦</span>
+              <span>Sobre: <strong>El asesino de la niebla</strong></span>
+            </a>
+
+            <div class="review-body">
+              <h3 class="review-headline">
+                «True Crime forense con un rigor histórico fascinante»
+              </h3>
+              <p class="review-text">
+                «Los archivos de las actas policiales y los mapas de patrulla de
+                Whitechapel en 1888 son oro puro. Se lee como un thriller
+                vertiginoso pero con la seriedad de un informe criminológico de
+                época.»
+              </p>
+            </div>
+
+            <footer class="review-author-block">
+              <div class="review-avatar avatar-olive">VK</div>
+              <div class="review-author-info">
+                <span class="review-author-name">Valeria Kogan</span>
+                <span class="review-author-role"
+                  >Investigadora y Criminóloga · Lomas de Zamora</span
+                >
+              </div>
+            </footer>
+          </article>
+
+          <!-- Reseña 3: Cianuro a las cinco -->
+          <article class="review-card" id="review-3">
+            <div class="review-card-top">
+              <div class="review-stars">★★★★★</div>
+              <span class="review-verified-badge">
+                <span>✓</span> Lectura Verificada
+              </span>
+            </div>
+
+            <a
+              href="#book-cianuro-cinco"
+              class="review-book-pill"
+              title="Ver libro Cianuro a las cinco en el catálogo"
+            >
+              <span>🍵</span>
+              <span>Sobre: <strong>Cianuro a las cinco</strong></span>
+            </a>
+
+            <div class="review-body">
+              <h3 class="review-headline">
+                «Diálogos afilados y un veneno impredecible»
+              </h3>
+              <p class="review-text">
+                «La dinámica entre los doce aristócratas sospechosos durante el
+                té es brillante. El ritmo nunca decae y el desenlace desafía
+                cualquier teoría que te hayas formulado antes de la mitad del
+                libro.»
+              </p>
+            </div>
+
+            <footer class="review-author-block">
+              <div class="review-avatar avatar-amber">ST</div>
+              <div class="review-author-info">
+                <span class="review-author-name">Silvina Townsend</span>
+                <span class="review-author-role"
+                  >Tertulia de Suspenso · Banfield</span
+                >
+              </div>
+            </footer>
+          </article>
+
+          <!-- Reseña 4: El corazón delator y otros crímenes -->
+          <article class="review-card" id="review-4">
+            <div class="review-card-top">
+              <div class="review-stars">★★★★★</div>
+              <span class="review-verified-badge">
+                <span>✓</span> Lectura Verificada
+              </span>
+            </div>
+
+            <a
+              href="#book-corazon-delator"
+              class="review-book-pill"
+              title="Ver libro El corazón delator en el catálogo"
+            >
+              <span>🕯️</span>
+              <span>Sobre: <strong>El corazón delator</strong></span>
+            </a>
+
+            <div class="review-body">
+              <h3 class="review-headline">
+                «La maestría psicológica de Poe en una edición impecable»
+              </h3>
+              <p class="review-text">
+                «El papel ahuesado y los grabados oscuros le dan a estos cuentos
+                la presencia gótica que merecen. La tensión de la culpa y el
+                sonido del latido bajo el entarimado siguen erizando la piel
+                como el primer día.»
+              </p>
+            </div>
+
+            <footer class="review-author-block">
+              <div class="review-avatar avatar-wood">GM</div>
+              <div class="review-author-info">
+                <span class="review-author-name">Gonzalo Morales</span>
+                <span class="review-author-role"
+                  >Profesor de Literatura · Adrogué</span
+                >
+              </div>
+            </footer>
+          </article>
+        </div>
+
+        <!-- Banner de Invitación a Compartir Reseña -->
+        <aside class="reviews-cta-banner">
+          <div class="reviews-cta-text">
+            <h3>¿Resolviste el enigma antes de la última página?</h3>
+            <p>
+              Nos fascina conocer tus deducciones, las pistas que descubriste y
+              tus hipótesis sobre nuestros casos. También podés dejarnos tus
+              comentarios sobre nuestro café. Escribinos tu veredicto y formará
+              parte de nuestro archivo de lectores.
+            </p>
+          </div>
+          <a
+            href="pages/contacto.html"
+            class="btn-primary"
+            id="btn-enviar-resena"
+          >
+            Compartir mi veredicto 🔍
+          </a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="banner" id="sobre-nosotros">
+      <div class="banner-container">
+        <div class="banner-text-block">
+          <span class="section-badge">🗝️ Archivo de la Librería</span>
+          <h2 class="banner-heading" id="about-heading">
+            Un espacio para amantes del <em>misterio y la deducción</em>.
+          </h2>
+          <p class="banner-description">
+            Inspirados por las ediciones de la edad dorada del crimen, los
+            relatos góticos y el café de especialidad servido a junto a un buen
+            libro, desafiando la perspicacia de cada lector. ¡Te esperamos en
+            nuestro café!
+          </p>
+          <div class="banner-cta-group">
+            <a
+              href="pages/contacto.html"
+              class="btn-primary"
+              id="btn-about-contact"
+              >¿Buscás un enigma descatalogado? Escribinos</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-columns">
+          <!-- Columna 1: Identidad -->
+          <div class="footer-col">
+            <div class="footer-brand">
+              <img
+                src="img/logo-bookstore.svg"
+                alt="Logo de la librería"
+                width="32"
+                height="32"
+              />
+              <span class="footer-brand-title">El Rincón de las Palabras</span>
+            </div>
+            <p class="footer-description">
+              Librería especializada en True Crime, novelas policiales y
+              clásicos góticos. Café y tertulias detectivescas.
+            </p>
+          </div>
+
+          <!-- Columna 2: Enlaces Rápidos -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Navegación</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#catalogo">Catálogo de libros</a></li>
+              <li><a href="#resenas">Reseñas de detectives</a></li>
+              <li><a href="#sobre-nosotros">Sobre la librería</a></li>
+              <li><a href="pages/contacto.html">Contacto y pistas</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Horarios de Visita -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Horarios de librería y café</h4>
+            <div class="footer-hours-item">
+              <span>Lunes a viernes:</span>
+              <span>09:30 - 20:30</span>
+            </div>
+            <div class="footer-hours-item">
+              <span>Sábados de misterio:</span>
+              <span>10:00 - 21:00</span>
+            </div>
+            <div class="footer-hours-item">
+              <span>Domingos de lectura:</span>
+              <span>11:00 - 18:00</span>
+            </div>
+          </div>
+
+          <!-- Columna 4: Encuéntranos -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Ubicación</h4>
+            <p class="footer-description">
+              Luzuriaga 123, Llavallol.<br />
+              Cerca de la Plaza Florentino Ameghino.<br />
+              Tel: +54 11 2345-6789<br />
+              contacto@elrincondelaspalabras.com
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 El Rincón de las Palabras. Todos los derechos
+            reservados.
+          </p>
+          <p>Hecho con amor por los libros.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

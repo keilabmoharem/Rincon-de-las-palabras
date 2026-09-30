@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="trainBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141926"/>
+      <stop offset="40%" stop-color="#1F1A24"/>
+      <stop offset="100%" stop-color="#0B0D14"/>
+    </linearGradient>
+    <radialGradient id="trainLight" cx="48%" cy="52%" r="45%">
+      <stop offset="0%" stop-color="#FFF5B8" stop-opacity="0.95"/>
+      <stop offset="25%" stop-color="#EAA83B" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#141926" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trainGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2B755"/>
+      <stop offset="50%" stop-color="#FFF4CE"/>
+      <stop offset="100%" stop-color="#C58E2E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo nocturno nevado -->
+  <rect width="400" height="600" fill="url(#trainBg)"/>
+
+  <!-- Sombra de lomo -->
+  <rect x="0" y="0" width="18" height="600" fill="#000000" opacity="0.45"/>
+  <line x1="18" y1="0" x2="18" y2="600" stroke="#7A6855" stroke-width="0.75" opacity="0.3"/>
+
+  <!-- Marco de billete de tren de época -->
+  <rect x="25" y="25" width="350" height="550" fill="none" stroke="#C58E2E" stroke-width="1.2" opacity="0.65"/>
+  <rect x="31" y="31" width="338" height="538" fill="none" stroke="#8E2424" stroke-width="0.75" opacity="0.45"/>
+
+  <!-- Nieve cayendo en la ventisca -->
+  <g fill="#FFFFFF" opacity="0.65">
+    <circle cx="65" cy="110" r="1.5"/><circle cx="120" cy="85" r="2.2"/><circle cx="280" cy="95" r="1.8"/>
+    <circle cx="340" cy="140" r="2"/><circle cx="80" cy="190" r="2.5"/><circle cx="320" cy="220" r="1.5"/>
+    <circle cx="150" cy="160" r="1.2"/><circle cx="240" cy="170" r="2.4"/>
+  </g>
+
+  <!-- Resplandor del faro delantero del tren -->
+  <polygon points="195,245 40,360 360,360" fill="url(#trainLight)" opacity="0.45"/>
+  <circle cx="195" cy="245" r="32" fill="url(#trainLight)"/>
+
+  <!-- Locomotora de vapor victoriana frontal (estilo Orient Express) -->
+  <g transform="translate(195, 235)">
+    <!-- Chimenea y penacho de humo oscuro -->
+    <rect x="-14" y="-75" width="28" height="30" rx="3" fill="#080A0F"/>
+    <ellipse cx="0" cy="-75" rx="18" ry="5" fill="#C58E2E"/>
+    <!-- Nubes de vapor hacia arriba -->
+    <ellipse cx="-25" cy="-95" rx="35" ry="18" fill="#3D3A44" opacity="0.5"/>
+    <ellipse cx="20" cy="-110" rx="45" ry="22" fill="#25242C" opacity="0.6"/>
+
+    <!-- Caldera cilíndrica frontal -->
+    <circle cx="0" cy="0" r="54" fill="#0E121A" stroke="#C58E2E" stroke-width="2"/>
+    <circle cx="0" cy="0" r="42" fill="#181D28"/>
+
+    <!-- Faro delantero central dorado -->
+    <circle cx="0" cy="10" r="18" fill="#FFF2AD" stroke="#C58E2E" stroke-width="2.5"/>
+    <circle cx="0" cy="10" r="12" fill="#FFFBE5"/>
+
+    <!-- Cuñas y quitanieves inferior -->
+    <polygon points="-58,45 58,45 70,80 -70,80" fill="#080A0F" stroke="#C58E2E" stroke-width="1.5"/>
+    <line x1="-50" y1="80" x2="0" y2="50" stroke="#8E2424" stroke-width="2"/>
+    <line x1="50" y1="80" x2="0" y2="50" stroke="#8E2424" stroke-width="2"/>
+
+    <!-- Vías de ferrocarril cubiertas de nieve -->
+    <line x1="-85" y1="80" x2="-140" y2="135" stroke="#C58E2E" stroke-width="3"/>
+    <line x1="85" y1="80" x2="140" y2="135" stroke="#C58E2E" stroke-width="3"/>
+    <line x1="-95" y1="95" x2="95" y2="95" stroke="#483B30" stroke-width="2"/>
+    <line x1="-115" y1="115" x2="115" y2="115" stroke="#483B30" stroke-width="2.5"/>
+  </g>
+
+  <!-- Encabezado y Título -->
+  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" fill="#C58E2E">INTRIGA SOBRE RIELES</text>
+  <line x1="130" y1="86" x2="270" y2="86" stroke="#8E2424" stroke-width="1"/>
+
+  <text x="200" y="395" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="14" font-weight="600" letter-spacing="3" fill="#D98A8A">LA COARTADA DEL</text>
+  <text x="200" y="428" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="28" font-weight="700" letter-spacing="2" fill="url(#trainGold)">EXPRESO DE</text>
+  <text x="200" y="458" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="24" font-weight="700" letter-spacing="2" fill="url(#trainGold)">MEDIANOCHE</text>
+
+  <text x="200" y="485" text-anchor="middle" font-family="'Lora', Georgia, serif" font-style="italic" font-size="11" fill="#C2A992">Doce pasajeros. Un cadáver. Una coartada perfecta.</text>
+
+  <!-- Autor -->
+  <text x="200" y="530" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="14" font-weight="700" letter-spacing="2" fill="#E8EEF5">MARGUERITE DUPONT</text>
+  <text x="200" y="548" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" letter-spacing="3" fill="#C58E2E">MISTERIO CLÁSICO EUROPEO</text>
+</svg>

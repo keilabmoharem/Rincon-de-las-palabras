@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="poeBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14181E"/>
+      <stop offset="60%" stop-color="#1B141E"/>
+      <stop offset="100%" stop-color="#0A090D"/>
+    </linearGradient>
+    <linearGradient id="silverGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDE2CF"/>
+      <stop offset="50%" stop-color="#C5B190"/>
+      <stop offset="100%" stop-color="#8E7856"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo oscuro espectral -->
+  <rect width="400" height="600" fill="url(#poeBg)"/>
+
+  <!-- Sombra de lomo -->
+  <rect x="0" y="0" width="18" height="600" fill="#000000" opacity="0.5"/>
+  <line x1="18" y1="0" x2="18" y2="600" stroke="#7A6855" stroke-width="0.75" opacity="0.3"/>
+
+  <!-- Marco gótico ornamentado -->
+  <rect x="26" y="26" width="348" height="548" fill="none" stroke="#634F38" stroke-width="1.2" opacity="0.65"/>
+  <rect x="32" y="32" width="336" height="536" fill="none" stroke="#8E2424" stroke-width="0.75" stroke-dasharray="6,3" opacity="0.5"/>
+
+  <!-- Luna invernal pálida -->
+  <circle cx="200" cy="210" r="85" fill="#D6DFE8" opacity="0.2"/>
+  <circle cx="200" cy="210" r="50" fill="#E8EEF5" opacity="0.8"/>
+
+  <!-- Calavera victoriana antigua (estilo Poe) -->
+  <ellipse cx="200" cy="285" rx="36" ry="32" fill="#D4C7B2" opacity="0.95"/>
+  <rect x="178" y="305" width="44" height="22" rx="4" fill="#C2B299"/>
+  <!-- Cuencas oculares sombrías -->
+  <ellipse cx="186" cy="282" rx="10" ry="13" fill="#14181E"/>
+  <ellipse cx="214" cy="282" rx="10" ry="13" fill="#14181E"/>
+  <!-- Cavidad nasal -->
+  <polygon points="200,293 196,303 204,303" fill="#14181E"/>
+  <!-- Dientes sutiles -->
+  <line x1="186" y1="318" x2="186" y2="327" stroke="#14181E" stroke-width="1.5"/>
+  <line x1="193" y1="318" x2="193" y2="327" stroke="#14181E" stroke-width="1.5"/>
+  <line x1="200" y1="318" x2="200" y2="327" stroke="#14181E" stroke-width="1.5"/>
+  <line x1="207" y1="318" x2="207" y2="327" stroke="#14181E" stroke-width="1.5"/>
+  <line x1="214" y1="318" x2="214" y2="327" stroke="#14181E" stroke-width="1.5"/>
+
+  <!-- El Cuervo posado con alas entreabiertas -->
+  <g transform="translate(195, 175) scale(0.95)">
+    <!-- Cuerpo del cuervo -->
+    <path d="M0,75 C-15,65 -25,35 -20,10 C-18,-10 -5,-35 15,-45 C25,-52 35,-45 40,-35 C45,-25 35,-10 32,20 C30,45 15,70 0,75 Z" fill="#08070B"/>
+    <!-- Cabeza y pico afilado -->
+    <circle cx="22" cy="-42" r="14" fill="#08070B"/>
+    <path d="M28,-46 L58,-40 L28,-36 Z" fill="#2A2430"/>
+    <!-- Ojo siniestro -->
+    <circle cx="24" cy="-43" r="2.5" fill="#C59B42"/>
+    <!-- Alas y plumas plumosas -->
+    <path d="M-15,10 C-35,25 -55,60 -65,100 C-40,80 -20,60 0,55 Z" fill="#100E17"/>
+    <!-- Cola -->
+    <path d="M-10,70 L-25,120 L0,85 Z" fill="#08070B"/>
+  </g>
+
+  <!-- Ramas secas y espinas de cementerio -->
+  <path d="M50,150 Q100,180 130,220 M350,140 Q290,175 270,220" fill="none" stroke="#483B30" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Niebla y sombras -->
+  <ellipse cx="200" cy="340" rx="140" ry="12" fill="#7A6855" opacity="0.15"/>
+
+  <!-- Título y Encabezados -->
+  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" fill="#8E2424">GÓTICO &amp; SUSPENSE</text>
+
+  <text x="200" y="380" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="14" font-weight="600" letter-spacing="3" fill="#B3A38E">RELATOS MACABROS</text>
+  <text x="200" y="415" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="28" font-weight="700" letter-spacing="2" fill="url(#silverGold)">EL CUERVO</text>
+  <text x="200" y="445" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="20" font-weight="700" letter-spacing="2" fill="url(#silverGold)">Y LAS SOMBRAS</text>
+
+  <text x="200" y="475" text-anchor="middle" font-family="'Lora', Georgia, serif" font-style="italic" font-size="11" fill="#C59B42">«Dijo el Cuervo: Jamás volverás a la calma»</text>
+
+  <!-- Autor -->
+  <text x="200" y="525" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="15" font-weight="700" letter-spacing="3" fill="#EDE2CF">EDGAR ALLAN POE</text>
+  <text x="200" y="545" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" letter-spacing="2.5" fill="#8E2424">EDICIÓN INTEGRAL ILUSTRADA</text>
+</svg>

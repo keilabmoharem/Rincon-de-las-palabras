@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="poisonBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18231C"/>
+      <stop offset="50%" stop-color="#111B15"/>
+      <stop offset="100%" stop-color="#080E0A"/>
+    </linearGradient>
+    <linearGradient id="emeraldGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C59B42"/>
+      <stop offset="50%" stop-color="#F2D898"/>
+      <stop offset="100%" stop-color="#558B6E"/>
+    </linearGradient>
+    <radialGradient id="cupGlow" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#4E8752" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#111B15" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fondo verde botica / veneno antiguo -->
+  <rect width="400" height="600" fill="url(#poisonBg)"/>
+
+  <!-- Sombra de lomo -->
+  <rect x="0" y="0" width="18" height="600" fill="#000000" opacity="0.45"/>
+  <line x1="18" y1="0" x2="18" y2="600" stroke="#558B6E" stroke-width="0.75" opacity="0.4"/>
+
+  <!-- Marco de botica victoriano -->
+  <rect x="25" y="25" width="350" height="550" fill="none" stroke="#C59B42" stroke-width="1.2" opacity="0.7"/>
+  <rect x="31" y="31" width="338" height="538" fill="none" stroke="#2D4D3A" stroke-width="0.75" opacity="0.6"/>
+
+  <!-- Aureola de cianuro sutil -->
+  <circle cx="200" cy="235" r="90" fill="url(#cupGlow)"/>
+
+  <!-- Taza de té victoriana de porcelana con veneno -->
+  <g transform="translate(200, 240) scale(1)">
+    <!-- Plato de té -->
+    <ellipse cx="0" cy="45" rx="75" ry="14" fill="#2E3C32" stroke="#C59B42" stroke-width="1.5"/>
+    <ellipse cx="0" cy="42" rx="60" ry="10" fill="#1C2620"/>
+    <!-- Taza de té -->
+    <path d="M-45,0 C-42,32 42,32 45,0 Z" fill="#F4EDE2" stroke="#C59B42" stroke-width="1.5"/>
+    <!-- Asa de la taza -->
+    <path d="M45,5 C60,5 60,25 40,28" fill="none" stroke="#C59B42" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Líquido de té con brillo tóxico esmeralda -->
+    <ellipse cx="0" cy="0" rx="43" ry="9" fill="#1A2D21"/>
+    <ellipse cx="0" cy="0" rx="35" ry="6" fill="#3D684E" opacity="0.8"/>
+    <!-- Gota de cianuro cayendo en la taza -->
+    <path d="M0,-25 C-4,-15 -6,-8 0,0 C6,-8 4,-15 0,-25 Z" fill="#75C28F"/>
+    <circle cx="0" cy="-3" r="2.5" fill="#E8FFE5"/>
+
+    <!-- Humo tóxico misterioso que se eleva -->
+    <path d="M-15,-10 C-30,-45 5,-60 -5,-95 C-12,-120 15,-140 0,-165" fill="none" stroke="#75C28F" stroke-width="1.5" stroke-linecap="round" opacity="0.4" stroke-dasharray="4,2"/>
+    <path d="M15,-10 C30,-40 -5,-65 5,-100 C12,-125 -15,-145 0,-170" fill="none" stroke="#D8B568" stroke-width="1.2" stroke-linecap="round" opacity="0.3"/>
+  </g>
+
+  <!-- Reloj de bolsillo detenido a las 5:00 exactas -->
+  <g transform="translate(115, 305) scale(0.65)">
+    <circle cx="0" cy="0" r="30" fill="#1C1812" stroke="#C59B42" stroke-width="3"/>
+    <circle cx="0" cy="-34" r="5" fill="none" stroke="#C59B42" stroke-width="2"/>
+    <!-- Manecillas a las 5:00 -->
+    <line x1="0" y1="0" x2="0" y2="-18" stroke="#F2D898" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="13" y2="13" stroke="#F2D898" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="3" fill="#C59B42"/>
+  </g>
+
+  <!-- Frasco de veneno y calavera -->
+  <g transform="translate(285, 290) scale(0.7)">
+    <rect x="-16" y="-10" width="32" height="48" rx="4" fill="#1B3024" stroke="#75C28F" stroke-width="1.5"/>
+    <rect x="-8" y="-18" width="16" height="8" rx="2" fill="#583E28"/>
+    <!-- Calavera en etiqueta -->
+    <circle cx="0" cy="8" r="6" fill="#F4EDE2"/>
+    <rect x="-3" y="12" width="6" height="4" fill="#F4EDE2"/>
+    <circle cx="-2" cy="7" r="1.2" fill="#1B3024"/>
+    <circle cx="2" cy="7" r="1.2" fill="#1B3024"/>
+  </g>
+
+  <!-- Encabezado & Título -->
+  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" fill="#C59B42">COARTADAS &amp; ALTA SOCIEDAD</text>
+  <line x1="130" y1="86" x2="270" y2="86" stroke="#558B6E" stroke-width="1"/>
+
+  <text x="200" y="380" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="14" font-weight="600" letter-spacing="3" fill="#75C28F">UN CRIMEN EN EL SALÓN</text>
+  <text x="200" y="415" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="28" font-weight="700" letter-spacing="2" fill="url(#emeraldGold)">CIANURO</text>
+  <text x="200" y="445" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="22" font-weight="700" letter-spacing="2" fill="url(#emeraldGold)">A LAS CINCO</text>
+
+  <text x="200" y="475" text-anchor="middle" font-family="'Lora', Georgia, serif" font-style="italic" font-size="11" fill="#C2A992">«El té estaba caliente. El corazón, helado.»</text>
+
+  <!-- Autor -->
+  <text x="200" y="525" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="14" font-weight="600" letter-spacing="2" fill="#F4EDE2">ARTHUR C. HASTINGS</text>
+  <text x="200" y="545" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" letter-spacing="3" fill="#C59B42">COLECCIÓN NOIR VICTORIANO</text>
+</svg>
