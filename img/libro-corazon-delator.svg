@@ -70,5 +70,5 @@
 
   <!-- Autor -->
   <text x="200" y="525" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="14" font-weight="700" letter-spacing="2" fill="#F0E2D5">EDGAR ALLAN POE</text>
-  <text x="200" y="545" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" letter-spacing="3" fill="#A82828">CLÁSICOS DEL HORROR &amp; CULPA</text>
+  <text x="200" y="545" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" letter-spacing="3" fill="#A82828">CLÁSICOS DEL HORROR Y CULPA</text>
 </svg>

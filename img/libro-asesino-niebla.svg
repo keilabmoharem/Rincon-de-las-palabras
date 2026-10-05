@@ -76,7 +76,7 @@
   <path d="M35,385 C120,380 280,380 365,385" stroke="#483D36" stroke-width="1.5" stroke-dasharray="14,7" opacity="0.4"/>
 
   <!-- Encabezado y Título -->
-  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" fill="#C27A23">TRUE CRIME &amp; ARCHIVO POLICIAL</text>
+  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" fill="#C27A23">TRUE CRIME Y ARCHIVO POLICIAL</text>
   <line x1="120" y1="86" x2="280" y2="86" stroke="#8E2424" stroke-width="1"/>
 
   <text x="200" y="415" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="14" font-weight="600" letter-spacing="3" fill="#D9A877">LAS ACTAS FORENSES DE</text>

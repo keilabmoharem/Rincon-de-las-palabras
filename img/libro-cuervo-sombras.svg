@@ -64,7 +64,7 @@
   <ellipse cx="200" cy="340" rx="140" ry="12" fill="#7A6855" opacity="0.15"/>
 
   <!-- Título y Encabezados -->
-  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" fill="#8E2424">GÓTICO &amp; SUSPENSE</text>
+  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" fill="#8E2424">GÓTICO Y SUSPENSE</text>
 
   <text x="200" y="380" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="14" font-weight="600" letter-spacing="3" fill="#B3A38E">RELATOS MACABROS</text>
   <text x="200" y="415" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="28" font-weight="700" letter-spacing="2" fill="url(#silverGold)">EL CUERVO</text>

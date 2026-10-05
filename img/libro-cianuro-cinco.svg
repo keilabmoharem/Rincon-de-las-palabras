@@ -72,8 +72,8 @@
     <circle cx="2" cy="7" r="1.2" fill="#1B3024"/>
   </g>
 
-  <!-- Encabezado & Título -->
-  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" fill="#C59B42">COARTADAS &amp; ALTA SOCIEDAD</text>
+  <!-- Encabezado y Título -->
+  <text x="200" y="75" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="4" fill="#C59B42">COARTADAS Y ALTA SOCIEDAD</text>
   <line x1="130" y1="86" x2="270" y2="86" stroke="#558B6E" stroke-width="1"/>
 
   <text x="200" y="380" text-anchor="middle" font-family="'Lora', Georgia, serif" font-size="14" font-weight="600" letter-spacing="3" fill="#75C28F">UN CRIMEN EN EL SALÓN</text>
