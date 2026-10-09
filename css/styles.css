@@ -4,70 +4,58 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. Google Fonts Import y CSS Variables
+   1. Variables CSS y configuración
    -------------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Special+Elite&display=swap");
-
 :root {
-  /* Atmósfera Victorian Noir y True Crime */
+  /* Paleta Dark Noir */
   --bg-dark-noir: #120F0E;
-  --bg-dark-surface: #1B1613;
   --bg-dark-card: #231D19;
   --bg-parchment: #F5EFEB;
   --bg-cream: #EFE5D6;
   --bg-surface: #FAF6F0;
-  --bg-card-hover: #FFFFFF;
 
-  /* Texto y Tinta */
+  /* Texto y tinta */
   --text-main: #1D1714;
   --text-muted: #5C4D44;
   --text-light: #8E7D70;
   --text-on-dark: #F3EBE1;
   --text-on-dark-muted: #B3A495;
 
-  /* Acentos Clásicos de Novela Negra */
+  /* Acentos Terracota */
   --accent-terracotta: #872020;
   --accent-terracotta-hover: #691414;
   --accent-terracotta-light: #F9EAEA;
 
-  /* Oro y Latón Envejecido */
+  /* Acentos oro y bronce */
   --accent-gold: #C59B42;
-  --accent-gold-hover: #A8812E;
-  --accent-gold-light: #FBF4E4;
   --accent-amber: #B87B1E;
-  --accent-amber-light: #FBF4E7;
 
-  /* Verde Biblioteca Victoriana */
+  /* Verde inglés */
   --accent-olive: #244633;
   --accent-olive-hover: #173223;
-  --accent-olive-light: #E7EFEA;
 
-  /* Bordes de Imprenta Clásica */
+  /* Bordes */
   --border-warm: #D6C7B2;
   --border-warm-subtle: #E8DED0;
   --border-dark: #382E28;
 
   /* Tipografía */
-  --font-title: "Cormorant Garamond", "Lora", Georgia, serif;
-  --font-serif: "Lora", Georgia, serif;
+  --font-title: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "Special Elite", "Courier Prime", Courier, monospace;
 
   /* Sombras y elevaciones editoriales */
   --shadow-subtle: 0 2px 8px rgba(29, 23, 20, 0.05);
   --shadow-medium: 0 6px 18px rgba(29, 23, 20, 0.09);
-  --shadow-hover: 0 12px 28px rgba(29, 23, 20, 0.14);
-  --shadow-book: -4px 0 12px rgba(0, 0, 0, 0.22), 0 8px 24px rgba(29, 23, 20, 0.12);
+  --shadow-hover: 0 12px 28px rgba(29, 23, 20, 0.15);
 
   /* Transiciones */
   --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Radio de bordes de imprenta (evitar burbujas plásticas) */
+  /* Bordes */
   --radius-xs: 2px;
   --radius-sm: 4px;
   --radius-md: 6px;
-  --radius-lg: 10px;
-  --radius-full: 9999px;
 }
 
 /* --------------------------------------------------------------------------
@@ -125,7 +113,7 @@ ol {
 }
 
 /* --------------------------------------------------------------------------
-   3. Header y Nav
+   3. Header y nav
    -------------------------------------------------------------------------- */
 .site-header {
   background-color: var(--bg-surface);
@@ -278,22 +266,16 @@ ol {
   display: none;
 }
 
-.badge-icon {
-  display: inline-flex;
-  align-items: center;
-  line-height: 1;
-}
-
 .badge-text-short {
   display: none;
 }
 
 /* --------------------------------------------------------------------------
-   4. Banner Principal (Victorian Noir y Chiaroscuro)
+   4. Banner principal
    -------------------------------------------------------------------------- */
 .banner {
   background-color: var(--bg-dark-noir);
-  background-image: 
+  background-image:
     radial-gradient(circle at 82% 18%, rgba(197, 155, 66, 0.14) 0%, transparent 48%),
     radial-gradient(circle at 12% 82%, rgba(135, 32, 32, 0.16) 0%, transparent 45%),
     linear-gradient(135deg, #171210 0%, #1f1814 60%, #130f0e 100%);
@@ -434,7 +416,7 @@ ol {
 }
 
 /* --------------------------------------------------------------------------
-   5. Main Layout y Catalogo 
+   5. Main layout y catálogo
    -------------------------------------------------------------------------- */
 .main-layout {
   max-width: 1240px;
@@ -447,7 +429,7 @@ ol {
   flex: 1 0 auto;
 }
 
-/* Filtros Sidebar */
+/* Filtros sidebar */
 .filters-sidebar {
   flex: 0 0 260px;
   background-color: var(--bg-surface);
@@ -558,7 +540,7 @@ ol {
   font-size: 0.86rem;
 }
 
-/* Sección Catalogo */
+/* Sección catalogo */
 .catalog-section {
   flex: 1 1 auto;
   display: flex;
@@ -602,7 +584,7 @@ ol {
   justify-content: flex-start;
 }
 
-/* Componentes Book Card */
+/* Componentes book card */
 .book-card {
   flex: 1 1 280px;
   max-width: 380px;
@@ -618,7 +600,7 @@ ol {
 
 .book-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(29, 23, 20, 0.15);
+  box-shadow: var(--shadow-hover);
   border-color: var(--accent-gold);
 }
 
@@ -630,7 +612,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 5px 0 12px rgba(0, 0, 0, 0.15); /* book spine depth */
+  box-shadow: inset 5px 0 12px rgba(0, 0, 0, 0.15);
 }
 
 .book-cover-img {
@@ -826,7 +808,7 @@ ol {
 
 .btn-secondary:hover {
   background-color: var(--bg-cream);
-  border-color: #dccbb6;
+  border-color: var(--border-warm);
   color: var(--accent-terracotta);
 }
 
@@ -844,23 +826,12 @@ ol {
   box-sizing: border-box;
 }
 
-.book-card-footer .btn-primary {
-  width: 142px;
-  height: 38px;
-  min-width: 142px;
-  padding: 0 0.5rem;
-  font-size: 0.82rem;
-  white-space: nowrap;
-  flex-shrink: 0;
-  box-sizing: border-box;
-}
-
 /* --------------------------------------------------------------------------
-   7. Sección reviews (Victorian Noir y Archivo de Lectores)
+   7. Sección reviews
    -------------------------------------------------------------------------- */
 .reviews-section {
   background-color: var(--bg-dark-noir);
-  background-image: 
+  background-image:
     radial-gradient(circle at 18% 18%, rgba(197, 155, 66, 0.1) 0%, transparent 45%),
     radial-gradient(circle at 82% 82%, rgba(135, 32, 32, 0.12) 0%, transparent 50%),
     linear-gradient(180deg, #171210 0%, #120F0E 100%);
@@ -936,12 +907,6 @@ ol {
   color: var(--accent-gold);
 }
 
-.rating-stars-gold {
-  color: var(--accent-gold);
-  font-size: 1rem;
-  letter-spacing: 2px;
-}
-
 .rating-divider {
   width: 1px;
   height: 20px;
@@ -992,12 +957,6 @@ ol {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.75rem;
-}
-
-.review-stars {
-  color: var(--accent-gold);
-  font-size: 0.95rem;
-  letter-spacing: 2px;
 }
 
 .review-verified-badge {
@@ -1159,7 +1118,7 @@ ol {
    -------------------------------------------------------------------------- */
 .contact-section {
   background-color: var(--bg-dark-noir);
-  background-image: 
+  background-image:
     radial-gradient(circle at 82% 18%, rgba(197, 155, 66, 0.12) 0%, transparent 45%),
     linear-gradient(135deg, #171210 0%, #1f1814 60%, #130f0e 100%);
   border-bottom: 1px solid var(--border-dark);
@@ -1331,7 +1290,7 @@ ol {
   outline: none;
   border-color: var(--accent-terracotta);
   background-color: #ffffff;
-  box-shadow: 0 0 0 3px rgba(195, 90, 56, 0.18);
+  box-shadow: 0 0 0 3px rgba(135, 32, 32, 0.2);
 }
 
 .form-textarea {
@@ -1478,7 +1437,7 @@ ol {
 }
 
 /* --------------------------------------------------------------------------
-   10. Diseño Responsive y Media Queries
+   10. Diseño responsive y media queries
    -------------------------------------------------------------------------- */
 @media (max-width: 960px) {
   .main-layout {
@@ -1505,7 +1464,7 @@ ol {
   }
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) {
   .header-container {
     padding: 0.45rem 1rem;
     gap: 0.75rem;
@@ -1561,10 +1520,6 @@ ol {
     font-size: 0.98rem;
   }
 
-  .brand-tagline {
-    display: none;
-  }
-
   .header-actions {
     order: 2;
   }
@@ -1573,14 +1528,6 @@ ol {
     font-size: 0.68rem;
     padding: 0.2rem 0.5rem;
     gap: 0.25rem;
-  }
-
-  .badge-text-long {
-    display: none;
-  }
-
-  .badge-text-short {
-    display: inline;
   }
 
   .main-navigation {
@@ -1731,12 +1678,7 @@ ol {
 }
 
 @media (max-width: 360px) {
-  .brand-tagline {
-    display: none;
-  }
-
   .badge-cafe {
-    font-size: 0.68rem;
     padding: 0.2rem 0.45rem;
   }
 }

@@ -10,13 +10,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Special+Elite&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Special+Elite&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 
 <body>
-  <!-- Encabezado Principal y Navegación -->
+  <!-- Encabezado principal y navegación -->
   <header class="site-header">
     <div class="header-container">
       <a href="../index.html" class="brand-link" id="brand-home-link">
@@ -24,24 +24,31 @@
           height="34" />
         <div class="brand-info">
           <span class="brand-title">El Rincón de las Palabras</span>
-          <span class="brand-tagline">Misterio · True Crime · Crónicas policiales</span>
+          <span class="brand-tagline">Misterio · True Crime · Relatos góticos y policiales</span>
         </div>
       </a>
 
       <nav class="main-navigation">
         <ul class="nav-links">
           <li class="nav-item">
-            <a href="../index.html" id="nav-inicio">Inicio</a>
+            <a href="../index.html" id="nav-inicio"><span class="nav-label-long">Inicio</span><span
+                class="nav-label-short">Inicio</span></a>
           </li>
           <li class="nav-item">
-            <a href="../index.html#catalogo" id="nav-catalogo">Catálogo</a>
+            <a href="../index.html#catalogo" id="nav-catalogo"><span class="nav-label-long">Catálogo</span><span
+                class="nav-label-short">Casos</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html#resenas" id="nav-resenas"><span class="nav-label-long">Reseñas</span><span
+                class="nav-label-short">Reseñas</span></a>
           </li>
           <li class="nav-item">
             <a href="../index.html#sobre-nosotros" id="nav-sobre-nosotros"><span class="nav-label-long">Sobre la
                 librería</span><span class="nav-label-short">Librería</span></a>
           </li>
           <li class="nav-item">
-            <a href="contacto.html" class="active" id="nav-contacto">Contacto</a>
+            <a href="contacto.html" class="active" id="nav-contacto"><span class="nav-label-long">Contacto</span><span
+                class="nav-label-short">Contacto</span></a>
           </li>
         </ul>
       </nav>
@@ -59,7 +66,7 @@
     </div>
   </header>
 
-  <!-- Banner de Contacto -->
+  <!-- Banner de contacto -->
   <section class="contact-section">
     <div class="contact-container">
       <span class="section-badge">
@@ -80,10 +87,10 @@
     </div>
   </section>
 
-  <!-- Contenedor Principal de Contacto: Información y Formulario Formspree -->
+  <!-- Contenedor principal de contacto: Información y formulario Formspree -->
   <main class="contact-main">
-    <!-- Tarjeta de Información y Detalles de la Librería -->
-    <aside class="contact-card-info">
+    <!-- Tarjeta de información y detalles de la librería -->
+    <section class="contact-card-info">
       <h2 class="contact-card-title">Información</h2>
 
       <div class="contact-detail-group">
@@ -123,7 +130,8 @@
           </div>
           <div class="contact-item-text">
             <span class="contact-item-title">Correo Electrónico</span>
-            <span class="contact-item-value">contacto@elrincondelaspalabras.com</span>
+            <a href="mailto:contacto@elrincondelaspalabras.com"
+              class="contact-item-value">contacto@elrincondelaspalabras.com</a>
           </div>
         </div>
 
@@ -136,12 +144,12 @@
           </div>
           <div class="contact-item-text">
             <span class="contact-item-title">Teléfono y WhatsApp</span>
-            <span class="contact-item-value">+54 11 2345-6789</span>
+            <a href="tel:+541123456789" class="contact-item-value">+54 11 2345-6789</a>
           </div>
         </div>
       </div>
 
-      <div class="sidebar-cozy-note">
+      <aside class="sidebar-cozy-note">
         <div class="sidebar-note-header">
           <svg class="ui-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
             <path fill="currentColor"
@@ -152,18 +160,19 @@
         <span>Nos reunimos cada jueves a las 18:30 para debatir un caso o un
           crimen histórico acompañados de café de especialidad y pastelería de
           la casa. ¡Entrada libre y gratuita!</span>
-      </div>
-    </aside>
+      </aside>
+    </section>
 
-    <!-- Contenedor del Formulario Formspree -->
+    <!-- Contenedor del formulario Formspree -->
     <section class="contact-form-wrapper">
       <h2 class="contact-card-title" id="form-heading">
         Envianos un Mensaje
       </h2>
 
-      <!-- Formulario Integrado con Formspree -->
-      <form action="https://formspree.io/f/mqpaqvqp" method="POST" class="contact-form" id="bookstore-contact-form">
-        <!-- Fila de Nombre y Correo -->
+      <!-- Formulario integrado con Formspree -->
+      <form action="https://formspree.io/f/mqpaqvqp" method="POST" class="contact-form" id="bookstore-contact-form"
+        aria-labelledby="form-heading">
+        <!-- Fila de nombre y correo -->
         <div class="form-row">
           <div class="form-group">
             <label for="campo-nombre" class="form-label">
@@ -182,7 +191,7 @@
           </div>
         </div>
 
-        <!-- Fila de Asunto / Motivo de Consulta -->
+        <!-- Fila de asunto / motivo de consulta -->
         <div class="form-group">
           <label for="campo-motivo" class="form-label">
             Motivo de tu Consulta
@@ -204,7 +213,7 @@
           </select>
         </div>
 
-        <!-- Campo de Mensaje -->
+        <!-- Campo de mensaje -->
         <div class="form-group">
           <label for="campo-mensaje" class="form-label">
             Tu Mensaje <span class="required-dot">*</span>
@@ -215,7 +224,7 @@
           <span class="form-helper">Respondemos habitualmente en menos de 24 horas.</span>
         </div>
 
-        <!-- Botón de Envío y Aviso -->
+        <!-- Botón de envío y aviso -->
         <div class="form-submit-block">
           <button type="submit" class="btn-primary" id="btn-enviar-formulario">
             Enviar mensaje
@@ -229,7 +238,7 @@
     </section>
   </main>
 
-  <!-- Pie de Página -->
+  <!-- Pie de página -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-columns">
@@ -249,9 +258,8 @@
           <ul class="footer-links">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="../index.html#catalogo">Catálogo de libros</a></li>
-            <li>
-              <a href="../index.html#sobre-nosotros">Sobre la librería</a>
-            </li>
+            <li><a href="../index.html#resenas">Reseñas de detectives</a></li>
+            <li><a href="../index.html#sobre-nosotros">Sobre la librería</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
@@ -277,15 +285,15 @@
           <p class="footer-description">
             Luzuriaga 123, Llavallol.<br />
             Cerca de la Plaza Florentino Ameghino.<br />
-            Tel: +54 11 2345-6789<br />
-            contacto@elrincondelaspalabras.com
+            Tel: <a href="tel:+541123456789">+54 11 2345-6789</a><br />
+            <a href="mailto:contacto@elrincondelaspalabras.com">contacto@elrincondelaspalabras.com</a>
           </p>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>&copy; 2026 El Rincón de las Palabras. Todos los derechos reservados.</p>
-        <p>Especialistas en misterio, true crime y clásicos góticos.</p>
+        <p>Hecho con amor por los libros</p>
       </div>
     </div>
   </footer>
